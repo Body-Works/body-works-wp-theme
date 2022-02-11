@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-02-11 17:18+0100\n"
-"PO-Revision-Date: 2022-02-11 17:18+0100\n"
+"POT-Creation-Date: 2022-02-11 18:17+0100\n"
+"PO-Revision-Date: 2022-02-11 18:17+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -60,3 +60,11 @@ msgstr "Wyślij do wyceny"
 #: woocommerce/checkout/review-order.php:46
 msgid "Quantity: "
 msgstr ""
+
+#: woocommerce/checkout/thankyou.php:40 woocommerce/checkout/thankyou.php:82
+msgid "Thank you. Your order has been received."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:45
+msgid "Product estimation number:"
+msgstr "Numer wyceny:"

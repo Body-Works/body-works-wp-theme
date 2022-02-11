@@ -227,7 +227,7 @@ body[data-ajax-transitions="true"] #ajax-loading-screen[data-method="standard"] 
 
 .loading-icon.spin, .portfolio-loading.spin, .pp_loaderIcon.spin, .default-loading-icon.spin{animation:2s cubic-bezier(0.63,0.045,0.34,1) 0s normal none infinite spinning_animation; -webkit-animation:2s cubic-bezier(0.63,0.045,0.34,1) 0s normal none infinite spinning_animation}
 
-.default-skin-loading-icon{width:100%; height:100%; background-position:center; display:block; background-repeat:no-repeat; background-image:url("img/icons/loading-white-bg.gif")}
+.default-skin-loading-icon{width:100%; height:100%; background-position:center; display:block; background-repeat:no-repeat; background-image:url("../salient/img/icons/loading-white-bg.gif")}
 
 @keyframes spinning_animation{0%{ transform:scale(1) rotate(0deg);  -o-transform:scale(1) rotate(0deg)}
 50%{ transform:scale(0.8) rotate(360deg);  -o-transform:scale(0.8) rotate(360deg)}
@@ -624,9 +624,9 @@ body[data-header-color="dark"] #header-secondary-outer nav >ul >li a:hover span.
 
 body[data-header-color="dark"] #header-secondary-outer ul ul li a{background-color:#111; font-size:11px; color:#A0A0A0}
 
-body[data-header-color="dark"] #header-secondary-outer #social .vimeo, body[data-header-color="dark"]  #header-secondary-outer #social .vimeo span{ background-image:url("img/icons/social/vimeo-header-black.png")!important}
+body[data-header-color="dark"] #header-secondary-outer #social .vimeo, body[data-header-color="dark"]  #header-secondary-outer #social .vimeo span{ background-image:url("../salient/img/icons/social/vimeo-header-black.png")!important}
 
-body[data-header-color="dark"] #header-secondary-outer #social .behance, body[data-header-color="dark"]  #header-secondary-outer #social .behance span{ background-image:url("img/icons/social/behance-header-black.png")!important}
+body[data-header-color="dark"] #header-secondary-outer #social .behance, body[data-header-color="dark"]  #header-secondary-outer #social .behance span{ background-image:url("../salient/img/icons/social/behance-header-black.png")!important}
 
 body[data-header-color="dark"] #header-secondary-outer li.current-menu-ancestor >a, body[data-header-color="dark"] #header-secondary-outer li.current-menu-item >a, 
 body[data-header-color="dark"] #header-secondary-outer li.sfHover >a, body[data-header-color="dark"] #header-secondary-outer li.sfHover >a i{color:#fff!important}
@@ -4583,8 +4583,8 @@ html[xmlns] .slides{display:block}
 
 .flex-direction-nav a:hover{background-color:#333!important}
 
-.flex-direction-nav .flex-next span{background-image:url("img/icons/slider-arrows-small.png")!important; background-position:right top; top:9px; right:9px; position:absolute; display:block; height:15px; width:15px; z-index:100}
-.flex-direction-nav .flex-prev span{background-image:url("img/icons/slider-arrows-small.png")!important; background-position:left top; top:9px; left:9px;  position:absolute; display:block; height:15px; width:15px; z-index:100}
+.flex-direction-nav .flex-next span{background-image:url("../salient/img/icons/slider-arrows-small.png")!important; background-position:right top; top:9px; right:9px; position:absolute; display:block; height:15px; width:15px; z-index:100}
+.flex-direction-nav .flex-prev span{background-image:url("../salient/img/icons/slider-arrows-small.png")!important; background-position:left top; top:9px; left:9px;  position:absolute; display:block; height:15px; width:15px; z-index:100}
 
 
 iframe.iframe-embed, iframe{max-width:100%}
@@ -12696,7 +12696,7 @@ body[data-ext-responsive="true"].single-post .heading-title[data-header-style="d
 
 .post-area.infinite_scroll #pagination{display:none}
 
-#infscr-loading{    position:relative;     z-index:10000000;     background-image:url("img/icons/loading-white-bg.gif");  background-repeat:no-repeat;  background-position:center;  height:60px;  border-radius:2px;  color:#555;  font-size:12px;  display:inline-block;  margin:0px auto;  text-align:center;  width:60px;  font-family:'Poppins'; font-weight:700;  font-size:12px;  letter-spacing:2px;  border-color:#555;  border-style:solid;  border-width:0;  box-sizing:content-box!important;  -webkit-box-sizing:content-box!important;  -o-box-sizing:content-box!important;  -moz-box-sizing:content-box!important}
+#infscr-loading{    position:relative;     z-index:10000000;     background-image:url("../salient/img/icons/loading-white-bg.gif");  background-repeat:no-repeat;  background-position:center;  height:60px;  border-radius:2px;  color:#555;  font-size:12px;  display:inline-block;  margin:0px auto;  text-align:center;  width:60px;  font-family:'Poppins'; font-weight:700;  font-size:12px;  letter-spacing:2px;  border-color:#555;  border-style:solid;  border-width:0;  box-sizing:content-box!important;  -webkit-box-sizing:content-box!important;  -o-box-sizing:content-box!important;  -moz-box-sizing:content-box!important}
 
 #infscr-loading.default_loader{background-image:none}
 
@@ -13045,16 +13045,16 @@ html body nav.woocommerce-pagination li a:hover{background-color:transparent!imp
 
 #pagination .next.inactive, #pagination .prev.inactive{background-color:#eae8e5; cursor:default!important; height:32px; width:32px; margin:0px 5px 0px 0px}
 
-#pagination .next a, #pagination .next.inactive, #pagination .page-numbers.next, .woocommerce nav.woocommerce-pagination ul li .page-numbers.next{background-image:url("img/icons/portfolio-arrows.png"); background-position:-20px 12px}
+#pagination .next a, #pagination .next.inactive, #pagination .page-numbers.next, .woocommerce nav.woocommerce-pagination ul li .page-numbers.next{background-image:url("../salient/img/icons/portfolio-arrows.png"); background-position:-20px 12px}
 
-#pagination .prev a, #pagination .prev.inactive, #pagination .page-numbers.prev, .woocommerce nav.woocommerce-pagination ul li .page-numbers.prev{    background-image:url("img/icons/portfolio-arrows.png"); background-position:13px 12px}
+#pagination .prev a, #pagination .prev.inactive, #pagination .page-numbers.prev, .woocommerce nav.woocommerce-pagination ul li .page-numbers.prev{    background-image:url("../salient/img/icons/portfolio-arrows.png"); background-position:13px 12px}
 
 @media only screen and (-o-min-device-pixel-ratio:3/2), 
 only screen and (-webkit-min-device-pixel-ratio:1.5), 
 only screen and (min-device-pixel-ratio:1.5), 
-only screen and (min-resolution:144dpi){#pagination .next a,#pagination .next.inactive,#pagination .page-numbers.next,.woocommerce nav.woocommerce-pagination ul li .page-numbers.next{background-image:url("img/icons/portfolio-arrows@2x.png")!important; background-size:40px 9px!important}
+only screen and (min-resolution:144dpi){#pagination .next a,#pagination .next.inactive,#pagination .page-numbers.next,.woocommerce nav.woocommerce-pagination ul li .page-numbers.next{background-image:url("../salient/img/icons/portfolio-arrows@2x.png")!important; background-size:40px 9px!important}
 
-#pagination .prev a, #pagination .prev.inactive, #pagination .page-numbers.prev, .woocommerce nav.woocommerce-pagination ul li .page-numbers.prev{    background-image:url("img/icons/portfolio-arrows@2x.png")!important;  background-size:40px 9px!important}
+#pagination .prev a, #pagination .prev.inactive, #pagination .page-numbers.prev, .woocommerce nav.woocommerce-pagination ul li .page-numbers.prev{    background-image:url("../salient/img/icons/portfolio-arrows@2x.png")!important;  background-size:40px 9px!important}
 }
 
 #author-bio{padding-bottom:50px; margin-bottom:50px; margin-top:0!important; min-height:80px; box-sizing:content-box!important; -moz-box-sizing:content-box!important; -o-box-sizing:content-box!important; -webkit-box-sizing:content-box!important; border-bottom:1px solid #DDD; position:relative}
