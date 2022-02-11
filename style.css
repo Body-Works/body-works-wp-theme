@@ -19,3 +19,11 @@ Text Domain:	 body-works
 .nectar-shop-header .woocommerce-result-count {
     display: none;
 }
+
+.easyzoom-flyout {
+    display: none !important;
+}
+
+.single-product-summary .product_title.entry-title {
+    display: none !important;
+}
