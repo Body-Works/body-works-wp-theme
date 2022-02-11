@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-02-11 16:04+0100\n"
-"PO-Revision-Date: 2022-02-11 16:04+0100\n"
+"POT-Creation-Date: 2022-02-11 17:18+0100\n"
+"PO-Revision-Date: 2022-02-11 17:18+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -40,9 +40,23 @@ msgid "Coupon:"
 msgstr ""
 
 #: woocommerce/cart/cart.php:141
-msgid "Update cart"
-msgstr ""
+msgid "Update evaluation"
+msgstr "Zaaktualizuj"
 
 #: woocommerce/cart/proceed-to-checkout-button.php:26
 msgid "Evaluate the products"
 msgstr "Przejdź do wyceny"
+
+#: woocommerce/checkout/payment.php:44
+#, fuzzy
+#| msgid "Update evaluation"
+msgid "Update totals"
+msgstr "Zaaktualizuj"
+
+#: woocommerce/checkout/payment.php:51
+msgid "Send products for valuation"
+msgstr "Wyślij do wyceny"
+
+#: woocommerce/checkout/review-order.php:46
+msgid "Quantity: "
+msgstr ""

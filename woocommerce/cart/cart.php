@@ -138,7 +138,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 						</div>
 					<?php } ?>
 
-					<button type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
+					<button style="text-transform: uppercase !important" type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update evaluation', 'body_works' ); ?>"><?php esc_html_e( 'Update evaluation', 'body_works' ); ?></button>
 
 					<?php do_action( 'woocommerce_cart_actions' ); ?>
 
