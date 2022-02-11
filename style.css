@@ -1,0 +1,21 @@
+/* 
+Theme Name:		 Body Works
+Theme URI:		 http://childtheme-generator.com/
+Description:	 Body Works is a child theme of Salient, created by ChildTheme-Generator.com
+Author:			 Konrad Fedorczyk
+Author URI:		 http://childtheme-generator.com/
+Template:		 salient
+Version:		 1.0.0
+Text Domain:	 body-works
+*/
+
+
+/*
+    Add your custom styles here
+*/
+
+/* Remove unused UI elements */
+.nectar-shop-header .woocommerce-ordering,
+.nectar-shop-header .woocommerce-result-count {
+    display: none;
+}
