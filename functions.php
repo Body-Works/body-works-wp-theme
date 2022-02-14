@@ -37,3 +37,16 @@ function mywptheme_child_deregister_styles() {
     wp_dequeue_style( 'parent-style-css' );
  
 }
+
+/**
+ * Reorder templates in a single product view.
+ */
+remove_action( 'woocommerce_single_product_summary','woocommerce_template_single_add_to_cart',30 );
+// Let's pack it in an additional div
+add_action( 'woocommerce_before_single_product_summary', function() {
+	echo "<div class='bw-custom-add-to-cart-wrapper'>";	
+}, 20 );
+add_action( 'woocommerce_before_single_product_summary','woocommerce_template_single_add_to_cart', 21 );
+add_action( 'woocommerce_before_single_product_summary', function() {
+	echo "</div>";	
+}, 22 );

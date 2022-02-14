@@ -9,7 +9,6 @@ Version:		 1.0.2
 Text Domain:	 body-works
 */
 
-
 /*
     Add your custom styles here
 */
@@ -17,13 +16,62 @@ Text Domain:	 body-works
 /* Remove unused UI elements */
 .nectar-shop-header .woocommerce-ordering,
 .nectar-shop-header .woocommerce-result-count {
-    display: none;
+  display: none;
 }
 
 .easyzoom-flyout {
-    display: none !important;
+  display: none !important;
 }
 
 .single-product-summary .product_title.entry-title {
-    display: none !important;
+  display: none !important;
+}
+
+/* 
+    Reorder UI elements in single product view
+*/
+.bw-custom-add-to-cart-wrapper {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.woocommerce
+  div.product
+  .bw-custom-add-to-cart-wrapper
+  form.cart
+  button.single_add_to_cart_button {
+  display: inline-block;
+  float: none;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+  .bw-custom-add-to-cart-wrapper {
+    text-align: left;
+  }
+
+  .woocommerce
+    div.product
+    .bw-custom-add-to-cart-wrapper
+    form.cart
+    button.single_add_to_cart_button {
+    float: left;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .bw-custom-add-to-cart-wrapper {
+    position: relative;
+    top: -18vw;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .bw-custom-add-to-cart-wrapper {
+    position: relative;
+    top: -280px;
+    margin-top: 0;
+  }
 }
