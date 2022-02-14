@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-02-14 13:42+0100\n"
-"PO-Revision-Date: 2022-02-14 13:42+0100\n"
+"POT-Creation-Date: 2022-02-14 14:37+0100\n"
+"PO-Revision-Date: 2022-02-14 14:38+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -18,6 +18,14 @@ msgstr ""
 #: functions.php:68
 msgid "Evaluation"
 msgstr "Wycena"
+
+#: functions.php:105
+msgid "Selected items"
+msgstr "Wybrane przedmioty"
+
+#: functions.php:108 woocommerce/cart/proceed-to-checkout-button.php:26
+msgid "Evaluate the products"
+msgstr "Przejdź do wyceny"
 
 #: woocommerce/cart/cart.php:30
 msgid "Product"
@@ -35,7 +43,7 @@ msgstr ""
 msgid "Total"
 msgstr ""
 
-#: woocommerce/cart/cart.php:55
+#: woocommerce/cart/cart.php:55 woocommerce/cart/mini-cart.php:46
 msgid "Remove this item"
 msgstr ""
 
@@ -46,10 +54,6 @@ msgstr ""
 #: woocommerce/cart/cart.php:141
 msgid "Update evaluation"
 msgstr "Zaaktualizuj"
-
-#: woocommerce/cart/proceed-to-checkout-button.php:26
-msgid "Evaluate the products"
-msgstr "Przejdź do wyceny"
 
 #: woocommerce/checkout/payment.php:44
 msgid "Update totals"
