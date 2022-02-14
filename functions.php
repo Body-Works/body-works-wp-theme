@@ -11,6 +11,15 @@ function body_works_enqueue_styles()
 	wp_enqueue_style('twentysixteen-style', get_stylesheet_directory_uri() . "/parent.css");
 }
 
+//
+function change_childtheme_stylesheet_ver()
+{
+	wp_dequeue_style('main-styles');
+	wp_deregister_style('main-styles');
+	wp_enqueue_style('main-styles', get_stylesheet_uri(), [], TEMPLATE_VERSION);
+}
+add_action('wp_print_styles', 'change_childtheme_stylesheet_ver');
+
 /**
  * Remove zoom on products.
  */
