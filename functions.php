@@ -1,5 +1,5 @@
 <?php
-define("TEMPLATE_VERSION", "1.0.4");
+define("TEMPLATE_VERSION", "1.0.5");
 
 /**
  * Load child theme style.
