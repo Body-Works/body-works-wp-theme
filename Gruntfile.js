@@ -45,5 +45,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-watch");
 
   // Default task
-  grunt.loadNpmTasks("default", ["sass"]);
+  grunt.registerTask("default", ["sass"]);
 };
