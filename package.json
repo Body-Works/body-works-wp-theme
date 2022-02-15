@@ -1,0 +1,24 @@
+{
+  "name": "body-works",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedek6/body-works.git"
+  },
+  "author": "Konrad Fedorczyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fedek6/body-works/issues"
+  },
+  "homepage": "https://github.com/fedek6/body-works#readme",
+  "devDependencies": {
+    "grunt": "^1.4.1",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}
