@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-02-14 14:38+0100\n"
-"PO-Revision-Date: 2022-02-14 14:40+0100\n"
+"POT-Creation-Date: 2022-02-15 16:11+0100\n"
+"PO-Revision-Date: 2022-02-15 16:11+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -15,17 +15,29 @@ msgstr ""
 "X-Poedit-KeywordsList: esc_html_e;__\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: functions.php:68
+#: functions.php:77
 msgid "Evaluation"
 msgstr "Wycena"
 
-#: functions.php:105
+#: functions.php:114
 msgid "Selected items"
 msgstr "Wybrane przedmioty"
 
-#: functions.php:108 woocommerce/cart/proceed-to-checkout-button.php:26
+#: functions.php:117 woocommerce/cart/proceed-to-checkout-button.php:26
 msgid "Evaluate the products"
 msgstr "Przejdź do wyceny"
+
+#: functions.php:129
+msgid ""
+"Please choose your items before a price evaluation.<br>You can do this by "
+"using product catalog:"
+msgstr ""
+"Prosimy o wybranie produktów przed wysyłką do wyceny.<br>Można dokonać tego "
+"na stronie z urządzeniami:"
+
+#: woocommerce/cart/cart-empty.php:28
+msgid "Return to products"
+msgstr "Przejdź do urządzeń"
 
 #: woocommerce/cart/cart.php:30
 msgid "Product"

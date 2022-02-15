@@ -1,17 +1,24 @@
-.nectar-shop-header {
-  .woocommerce-ordering {
-    display: none;
+html {
+  .nectar-shop-header {
+    .woocommerce-ordering {
+      display: none;
+    }
+    .woocommerce-result-count {
+      display: none;
+    }
   }
-  .woocommerce-result-count {
-    display: none;
-  }
-}
 
-.easyzoom-flyout {
-  display: none !important;
-}
-.single-product-summary {
-  .product_title.entry-title {
+  .easyzoom-flyout {
     display: none !important;
+  }
+  .single-product-summary {
+    .product_title.entry-title {
+      display: none !important;
+    }
+  }
+
+  .woocommerce-page .woocommerce p.cart-empty {
+    font-size: unset;
+    line-height: unset;
   }
 }

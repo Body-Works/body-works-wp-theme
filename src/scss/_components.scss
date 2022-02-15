@@ -1,7 +1,7 @@
 ///
 /// Primary button
 ///
-.bw_btn_primary {
+.bw-btn-primary {
   background-color: #bac844;
   border-radius: 4px;
   text-transform: uppercase;
@@ -49,4 +49,13 @@
       }
     }
   }
+}
+
+///
+/// Custom notifications
+///
+
+.bw-custom-notification {
+  font-size: 1.25em !important;
+  font-weight: 600 !important;
 }
