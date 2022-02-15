@@ -1,0 +1,29 @@
+/* Animations */
+.engage-shake {
+  transform: translate3d(0, 0, 0);
+  animation: engage-shake 2s infinite linear;
+}
+
+@keyframes engage-shake {
+  0%,
+  69% {
+    transform: translate3d(0, 0, 0);
+  }
+  70%,
+  80% {
+    transform: translate3d(-3px, 0, 0);
+  }
+  75%,
+  85% {
+    transform: translate3d(3px, 0, 0);
+  }
+  90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  95% {
+    transform: translate3d(2px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}

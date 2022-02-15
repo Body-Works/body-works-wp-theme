@@ -1,0 +1,17 @@
+.nectar-shop-header {
+  .woocommerce-ordering {
+    display: none;
+  }
+  .woocommerce-result-count {
+    display: none;
+  }
+}
+
+.easyzoom-flyout {
+  display: none !important;
+}
+.single-product-summary {
+  .product_title.entry-title {
+    display: none !important;
+  }
+}
