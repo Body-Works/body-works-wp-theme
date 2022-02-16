@@ -1,0 +1,64 @@
+@use "config";
+
+///
+/// Custom flexbox grid
+/// Grid of equal columns, a class to hack WPBakery columns
+///
+.bw-custom-flexbox-grid {
+  > .col {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+
+    > .wpb_column {
+      flex: 0 0 100%;
+    }
+  }
+
+  /// Modifiers
+  &.--link-opacity {
+    a {
+      display: inline-block;
+      transition: transform 0.5s ease-out, box-shadow 0.75s ease-out;
+      transform: scale(1);
+
+      &:hover {
+        transform: scale(1.02);
+        box-shadow: 8px 8px 24px 0px var(--shadow-color-medium);
+      }
+    }
+  }
+
+  &.--col-text-center {
+    .wpb_column {
+      text-align: center;
+    }
+  }
+
+  /// Desktop
+  @media only screen and (min-width: config.$breakpoint-desktop) {
+    /// Equal columns on desktop
+    &.--equal-desktop {
+      .col > .wpb_column {
+        order: 0;
+        align-self: auto;
+
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 0;
+
+        margin: 0;
+        width: auto;
+
+        border: solid 1px Red;
+      }
+
+      .col > .wpb_column ~ .wpb_column {
+        padding-left: 2.1%;
+      }
+    }
+  }
+}
