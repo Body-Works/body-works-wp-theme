@@ -95,11 +95,27 @@ function bw_woocommerce_header_add_to_cart_fragment($fragments)
 add_action('after_setup_theme', function () {
 	remove_filter('woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment');
 	remove_filter('add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment');
+
+  // Disable salient product listing
+  remove_action('woocommerce_before_shop_loop_item_title', 'product_thumbnail_minimal');
 });
 
 
 add_filter('add_to_cart_fragments', 'bw_woocommerce_header_add_to_cart_fragment');
 add_filter('woocommerce_add_to_cart_fragments', 'bw_woocommerce_header_add_to_cart_fragment');
+
+/**
+ * Add a custom product listing.
+ *
+ */
+add_action('woocommerce_before_shop_loop_item_title', function() {
+  global $product;
+  global $woocommerce;
+  global $product_hover_alt_image;
+  global $nectar_quick_view_in_use;
+
+  require __DIR__ . '/custom-themes/product-thumbnail-minimal.php';
+}, 10 );
 
 /**
  * Replace mini cart buttons
