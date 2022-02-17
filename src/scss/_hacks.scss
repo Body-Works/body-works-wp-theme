@@ -23,6 +23,16 @@ html {
   }
 
   ///
+  /// Chanfge formcraft colors
+  ///
+  .fc-form {
+    .main-label span,
+    .sub-label span {
+      color: var(--ui-gray-medium) !important;
+    }
+  }
+
+  ///
   /// Remove formcraft advert
   ///
   .formcraft-css .powered-by {
