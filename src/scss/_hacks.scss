@@ -21,4 +21,11 @@ html {
     font-size: unset;
     line-height: unset;
   }
+
+  ///
+  /// Remove formcraft advert
+  ///
+  .formcraft-css .powered-by {
+    display: none;
+  }
 }
