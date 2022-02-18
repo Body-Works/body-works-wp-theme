@@ -1,3 +1,5 @@
+@use "config";
+
 html {
   .nectar-shop-header {
     .woocommerce-ordering {
@@ -56,76 +58,77 @@ html {
   ///
   /// Product listings
   ///
-  .products li.product.minimal .product-add-to-cart {
-    a.added_to_cart.wc-forward {
-      display: none;
-    }
+  @media only screen and (min-width: config.$breakpoint-desktop) {
+    .products li.product.minimal .product-add-to-cart {
+      a.added_to_cart.wc-forward {
+        display: none;
+      }
 
-    a.add_to_cart_button {
-      opacity: 1;
-      border: solid 1px var(--border-light) !important;
-      border-radius: 8px;
-      padding: 0.25em 1em !important;
-      display: block;
-      background-color: var(--primary-green) !important;
-      color: white !important;
-      margin-top: 1.5em !important;
-      transition: all 0.5s ease-out !important;
-      background-position: center center !important;
-      text-align: center !important;
-
-      .normal.icon-salient-cart {
-        color: White !important;
+      a.add_to_cart_button {
+        opacity: 1;
+        border: solid 1px var(--border-light) !important;
+        border-radius: 8px;
+        padding: 0.25em 1em !important;
+        display: block;
+        background-color: var(--primary-green) !important;
+        color: white !important;
+        margin-top: 1.5em !important;
         transition: all 0.5s ease-out !important;
-      }
-
-
-      &::after,
-      &::before {
-        display: inline-block !important;
-        position: absolute !important;
-        left: 50%;
-        top: 50%;
-        margin-left: -5px;
-        margin-top: 5px;
-      }
-
-      &:hover {
-        background-color: var(--background-ultra-light) !important;
-        color: var(--primary-green) !important;
+        background-position: center center !important;
+        text-align: center !important;
 
         .normal.icon-salient-cart {
+          color: White !important;
+          transition: all 0.5s ease-out !important;
+        }
+
+        &::after,
+        &::before {
+          display: inline-block !important;
+          position: absolute !important;
+          left: 50%;
+          top: 50%;
+          margin-left: -5px;
+          margin-top: 5px;
+        }
+
+        &:hover {
+          background-color: var(--background-ultra-light) !important;
           color: var(--primary-green) !important;
-        }
 
+          .normal.icon-salient-cart {
+            color: var(--primary-green) !important;
+          }
+
+          span {
+            background: none;
+          }
+        }
+      }
+
+      a.add_to_cart_button.loading {
+        .normal.icon-salient-cart {
+          opacity: 0;
+          transition: none;
+        }
         span {
-          background: none;
+          opacity: 0;
         }
       }
-    }
 
-    a.add_to_cart_button.loading {
-      .normal.icon-salient-cart {
+      a.add_to_cart_button.added {
+        pointer-events: none;
+        background-color: var(--background-ultra-light) !important;
+        color: var(--primary-green) !important;
         opacity: 0;
-        transition: none;
-      }
-      span {
-        opacity: 0;
-      }
-    }
-
-    a.add_to_cart_button.added {
-      pointer-events: none;
-      background-color: var(--background-ultra-light) !important;
-      color: var(--primary-green) !important;
-      opacity: 0;
-      /* &::before {
+        /* &::before {
         content: "OK";
         display: block;
       } */
 
-      .normal.icon-salient-cart {
-        opacity: 0;
+        .normal.icon-salient-cart {
+          opacity: 0;
+        }
       }
     }
   }
