@@ -68,7 +68,7 @@ module.exports = function (grunt) {
             },
             {
               name: "xxl",
-              width: 1500,
+              width: 2000,
             },
           ],
         },
