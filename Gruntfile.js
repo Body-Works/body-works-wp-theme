@@ -31,6 +31,7 @@ module.exports = function (grunt) {
       },
     },
 
+    // Image minification
     imagemin: {
       dynamic: {
         files: [
@@ -44,11 +45,49 @@ module.exports = function (grunt) {
       },
     },
 
+    // Responsive images
+    responsive_images: {
+      myTask: {
+        options: {
+          sizes: [
+            {
+              name: "sm",
+              width: 320,
+            },
+            {
+              name: "md",
+              width: 640,
+            },
+            {
+              name: "lg",
+              width: 1024,
+            },
+            {
+              name: "xl",
+              width: 1500,
+            },
+            {
+              name: "xxl",
+              width: 1500,
+            },
+          ],
+        },
+        files: [
+          {
+            expand: true,
+            src: ["*_max.{jpg,gif,png}"],
+            cwd: 'src/img/',
+            dest: "assets/img/responsive/",
+          },
+        ],
+      },
+    },
+
     // watch all .scss files under the srcPath
     watch: {
       scripts: {
         files: ["<%= meta.srcPath %>/**/*.scss"],
-        tasks: ["sass", "imagemin"],
+        tasks: ["sass"],
       },
     },
   });
@@ -56,8 +95,9 @@ module.exports = function (grunt) {
   // Load tasks
   grunt.loadNpmTasks("grunt-contrib-sass");
   grunt.loadNpmTasks("grunt-contrib-imagemin");
+  grunt.loadNpmTasks("grunt-responsive-images");
   grunt.loadNpmTasks("grunt-contrib-watch");
 
   // Default task
-  grunt.registerTask("default", ["sass", "imagemin"]);
+  grunt.registerTask("default", ["sass", "imagemin", "responsive_images"]);
 };
