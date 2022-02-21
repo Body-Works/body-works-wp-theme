@@ -19,9 +19,18 @@
 if (!defined('ABSPATH')) {
   exit; // Exit if accessed directly.
 }
+
+/** @var string $cssModifier */
+$cssModifier = '--no-variant';
+
+// Let's determine additional classes
+if (get_field("variant")) {
+  $cssModifier = '--' . get_field("variant");
+}
+
 ?>
 
-<div class='bw-custom-product-description --<?=  TEMPLATE_VARIANT ?? "standard"; ?>'>
+<div class='bw-custom-product-description <?= $cssModifier ?>'>
   <h1><?= get_the_title() ?></h1>
   <h2><?= get_field("model"); ?></h2>
 </div>
