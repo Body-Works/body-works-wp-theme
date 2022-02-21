@@ -67,7 +67,31 @@
 ///
 
 .bw-custom-product-description {
-  &.--body-works {
-    border: solid 1px Red;
+  &.--bwe-eu-kombinowana-na-pylonie {
+    border: solid 1px yellow;
+  }
+
+  &.--bwe-eu-kombinowana {
+    border: solid 1px yellow;
+  }
+
+  &.--bwe-eu {
+    border: solid 1px yellow;
+  }
+
+  &.--bwzk-kompaktowa {
+    border: solid 1px yellow;
+  }
+
+  &.--kids {
+    border: solid 1px yellow;
+  }
+
+  &.--serwisowe {
+    border: solid 1px yellow;
+  }
+
+  &.--workout {
+    border: solid 1px yellow;
   }
 }
