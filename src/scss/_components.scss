@@ -61,3 +61,13 @@
   font-size: 1.25em !important;
   font-weight: 600 !important;
 }
+
+///
+/// Product description
+///
+
+.bw-custom-product-description {
+  &.--body-works {
+    border: solid 1px Red;
+  }
+}
