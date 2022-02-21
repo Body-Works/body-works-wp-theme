@@ -31,19 +31,33 @@ module.exports = function (grunt) {
       },
     },
 
+    imagemin: {
+      dynamic: {
+        files: [
+          {
+            expand: true,
+            cwd: "src/",
+            src: ["img/*.{png,jpg,gif}"],
+            dest: "assets/",
+          },
+        ],
+      },
+    },
+
     // watch all .scss files under the srcPath
     watch: {
       scripts: {
         files: ["<%= meta.srcPath %>/**/*.scss"],
-        tasks: ["sass"],
+        tasks: ["sass", "imagemin"],
       },
     },
   });
 
   // Load tasks
   grunt.loadNpmTasks("grunt-contrib-sass");
+  grunt.loadNpmTasks("grunt-contrib-imagemin");
   grunt.loadNpmTasks("grunt-contrib-watch");
 
   // Default task
-  grunt.registerTask("default", ["sass"]);
+  grunt.registerTask("default", ["sass", "imagemin"]);
 };
