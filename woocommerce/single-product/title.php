@@ -23,6 +23,9 @@ if (!defined('ABSPATH')) {
 /** @var string $cssModifier */
 $cssModifier = '--no-variant';
 
+/** @var mixed $model */
+$model = get_field("model");
+
 // Let's determine additional classes
 if (get_field("variant")) {
   $cssModifier = '--' . get_field("variant");
@@ -32,6 +35,8 @@ if (get_field("variant")) {
 
 <div class='bw-custom-product-description <?= $cssModifier ?>'>
   <h1><?= get_the_title() ?></h1>
+<?php if ($model): ?>
   <h2><?= get_field("model"); ?></h2>
+<?php endif; ?>
 </div>
 

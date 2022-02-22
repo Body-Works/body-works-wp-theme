@@ -1,0 +1,87 @@
+@use "../config";
+
+///
+/// Product title
+///
+
+// Map of "modifier": "png file prefix"
+$product-variants: (
+  "--bwe-eu-kombinowana-na-pylonie": "seria_eu_na_pylonie",
+  "--bwe-eu-kombinowana": "seria_eu_kombinowana",
+  "--bwe-eu": "seria_eu",
+  "--bwzk-kompaktowa": "kompaktowa",
+  "--kids": "kids",
+  "--serwisowe": "serwisowe",
+  "--workout": "workout",
+  "--no-variant": "serwisowe"
+);
+
+.bw-custom-product-description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
+
+  padding: 2em 0;
+
+  // Reset em
+  font-size: 1rem;
+
+  :nth-child(1) {
+    order: 0;
+    flex: 0 0 69%;
+    align-self: auto;
+  }
+
+  :nth-child(2) {
+    order: 0;
+    flex: 1 0 auto;
+    align-self: auto;
+    border-left: solid 1px rgba(255, 255, 255, .4);
+  }
+
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: 100% auto;
+
+  h1,
+  h2 {
+    color: White;
+    text-transform: uppercase;
+    // padding: 0 0 !important;
+    line-height: 125% !important;
+    margin: 0 !important;
+
+    padding: 1.5em 1em 1em 1em;
+
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+  }
+
+  h1 {
+    font-size: .65em !important;
+  }
+
+  h2 {
+    font-size: .65em !important;
+  }
+
+  // Loop through the map
+  @each $classname, $img in $product-variants {
+    &.#{$classname} {
+      background-image: url(#{config.$img-path}/#{$img}_mini.png);
+    }
+  }
+
+  ///
+  /// Responsive styles
+  ///
+  @media only screen and (min-width: 500px) {
+    font-size: 1.375rem;
+  }
+
+  @media only screen and (min-width: config.$breakpoint-md) {
+    font-size: 2rem;
+  }
+}
