@@ -1,5 +1,5 @@
 <?php
-define("TEMPLATE_VERSION", "1.0.10");
+define("TEMPLATE_VERSION", "1.0.11");
 define("TEMPLATE_VARIANT", "body-works");
 
 /**
