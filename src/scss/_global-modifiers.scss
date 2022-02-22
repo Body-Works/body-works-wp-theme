@@ -1,0 +1,6 @@
+html body {
+  /// Force uppercase
+  .--force-uppercase {
+    text-transform: uppercase !important;
+  }
+}
