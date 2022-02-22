@@ -76,18 +76,34 @@ module.exports = function (grunt) {
           {
             expand: true,
             src: ["*_max.{jpg,gif,png}"],
-            cwd: 'src/img/',
+            cwd: "src/img/",
             dest: "assets/img/responsive/",
           },
         ],
       },
     },
 
+    // Terser
+    terser: {
+      options: {
+        // Task-specific options go here.
+      },
+      dist: {
+        files: {
+          './assets/js/main.js': ['<%= meta.srcPath %>/js/main.js'],
+        }
+      },
+    },
+
     // watch all .scss files under the srcPath
     watch: {
-      scripts: {
+      styles: {
         files: ["<%= meta.srcPath %>/**/*.scss"],
         tasks: ["sass"],
+      },
+      scripts: {
+        files: ["<%= meta.srcPath %>/**/*.js"],
+        tasks: ["terser"],
       },
     },
   });
@@ -96,8 +112,9 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-sass");
   grunt.loadNpmTasks("grunt-contrib-imagemin");
   grunt.loadNpmTasks("grunt-responsive-images");
+  grunt.loadNpmTasks("grunt-terser");
   grunt.loadNpmTasks("grunt-contrib-watch");
 
   // Default task
-  grunt.registerTask("default", ["sass", "imagemin", "responsive_images"]);
+  grunt.registerTask("default", ["sass", "imagemin", "terser", "responsive_images"]);
 };
