@@ -1,0 +1,37 @@
+@use "../config";
+
+///
+/// Single product view
+///
+
+.bw-single-product {
+  .woocommerce-loop-product__model {
+    border: solid 1px var(--border-light);
+    display: inline-block;
+    padding: 0.25em 0.5em !important;
+    border-radius: 4px;
+    margin-bottom: 0.5em !important;
+  }
+
+  .product-meta {
+    padding-top: 10px !important;
+  }
+
+  @media only screen and (min-width: config.$breakpoint-lg) {
+    &__thumb {
+      text-align: center !important;
+      // height: 300px;
+      display: block;
+
+      img {
+        height: 300px !important;
+        max-height: 300px !important;
+        width: auto;
+      }
+    }
+
+    .woocommerce-loop-product__title {
+      min-height: 46px;
+    }
+  }
+}

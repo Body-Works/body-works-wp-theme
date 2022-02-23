@@ -1,5 +1,5 @@
 <div class="background-color-expand"></div>
-<div class="product-wrap">
+<div class="bw-single-product product-wrap">
   <?php
 
   $product_second_image = null;
@@ -15,7 +15,7 @@
       $product_second_image = wp_get_attachment_image($product_attach_ids[0], 'shop_catalog', false, array('class' => 'hover-gallery-image'));
   }
 
-  echo '<a href="' . get_permalink() . '">';
+  echo '<a class="bw-single-product__thumb" href="' . get_permalink() . '">';
   echo  woocommerce_get_product_thumbnail() . $product_second_image;
   echo '</a>';
   echo '<div class="product-meta">';

@@ -153,3 +153,14 @@ function custom_empty_cart_message()
   $html .= wp_kses_post(apply_filters('wc_empty_cart_message', __('Please choose your items before a price evaluation.<br>You can do this by using product catalog:', 'body_works')));
   echo $html . '</p>';
 }
+
+/**
+ * Add product moodel to the title
+ */
+add_action( 'woocommerce_shop_loop_item_title', function() {
+  $model = get_field("model");
+
+  if ($model && $model = esc_html($model)) {
+    echo "<h3 class='woocommerce-loop-product__model'>{$model}</h3>";
+  }
+}, 9 );
