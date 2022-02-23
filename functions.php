@@ -2,6 +2,8 @@
 define("TEMPLATE_VERSION", "1.0.12");
 define("TEMPLATE_VARIANT", "body-works");
 
+require __DIR__ . "/inc/__header-modify.php";
+
 /**
  * Load child theme style.
  */
@@ -71,7 +73,7 @@ add_action('woocommerce_before_single_product_summary', function () {
 
 
 /**
- * Change look of cart
+ * Change a look of cart
  */
 function bw_woocommerce_header_add_to_cart_fragment($fragments)
 {
@@ -79,16 +81,16 @@ function bw_woocommerce_header_add_to_cart_fragment($fragments)
 
   ob_start(); ?>
   <a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>">
-    <div class="cart-icon-wrap">
+    <div class="cart-icon-wrap bw-cart-icon-wrap">
 
-      <div class="bw-btn-primary engage-shake">
+      <div class="bw-btn --primary engage-shake">
         <?= __("Evaluation", "body_works"); ?>
       </div>
 
-      <div class="cart-wrap">
-        <span>
+      <div class="cart-wrap bw-cart-wrap-item-count">
+        <div>
           <?php echo $woocommerce->cart->cart_contents_count; ?>
-        </span>
+        </div>
       </div>
     </div>
   </a>

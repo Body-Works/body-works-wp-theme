@@ -1,0 +1,45 @@
+@use "../config";
+
+#header-outer.transparent header#top nav > ul > li > a.bw-btn {
+  opacity: 1 !important;
+}
+
+header#header-outer,
+header#top {
+  .bw-cart-icon-wrap {
+    height: auto !important;
+  }
+
+  .bw-cart-wrap-item-count {
+    position: absolute;
+    font-size: .688rem;
+
+    > div {
+      background-color: White !important;
+      border-radius: 99px;
+      color: black;
+      line-height: 2em !important;
+      width: 2em !important;
+
+      box-shadow: 0px 5px 12px rgb(0 0 0 / 20%);
+
+      font-weight: 600;
+      font-size: 1em !important;
+    }
+  }
+
+  .bw-additional-header-button {
+    display: none !important;
+  }
+
+  @media only screen and (min-width: config.$breakpoint-lg) {
+    .bw-additional-header-button {
+      display: flex !important;
+
+      > a.bw-btn {
+        opacity: 1 !important;
+      }
+    }
+  }
+
+}
