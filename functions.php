@@ -1,5 +1,5 @@
 <?php
-define("TEMPLATE_VERSION", "1.0.12");
+define("TEMPLATE_VERSION", "1.0.13");
 define("TEMPLATE_VARIANT", "body-works");
 
 require __DIR__ . "/inc/__header-modify.php";
