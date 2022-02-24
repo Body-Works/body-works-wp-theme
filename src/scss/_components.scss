@@ -93,3 +93,22 @@
   font-size: 1.25em !important;
   font-weight: 600 !important;
 }
+
+///
+/// Custom category header
+///
+.bw-special-category-header {
+  font-size: 2.25rem;
+  font-family: 'Gotham' !important;
+  font-weight: 300 !important;
+  text-transform: uppercase !important;
+  letter-spacing: .2em !important;
+  line-height: 120% !important;
+  margin: 0 0 !important;
+
+  > small {
+    display: block;
+    color: var(--primary-green);
+    font-size: .678em;
+  }
+}

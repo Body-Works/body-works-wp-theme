@@ -1,0 +1,11 @@
+@use "config";
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('#{config.$font-path}/subset-Gotham-Light.woff2') format('woff2'),
+      url('#{config.$font-path}/subset-Gotham-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
