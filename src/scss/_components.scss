@@ -35,6 +35,14 @@
       background-color: var(--ui-gray-medium-hover);
     }
   }
+
+  &.--wrench-icon::before {
+    font-family: "FontAwesome";
+    content: "\f0ad";
+    display: inline-block;
+    margin-right: .5em;
+    margin-top: -.3em;
+  }
 }
 
 // Hack

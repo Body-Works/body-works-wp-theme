@@ -8,7 +8,7 @@
  * @author Konrad Fedorczyk <contact@realhe.ro>
  * @link https://github.com/fedek6/body-works
  */
-define("TEMPLATE_VERSION", "1.0.15");
+define("TEMPLATE_VERSION", "1.0.16");
 define("TEMPLATE_VARIANT", "body-works");
 
 require __DIR__ . "/inc/__header-modify.php";

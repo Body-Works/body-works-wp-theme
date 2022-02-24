@@ -29,7 +29,7 @@ function nectar_header_button_items()
 
   // Add a service button
   echo '<li class="bw-additional-header-button">
-    <a href="https://body-works.pl/serwis/" class="bw-btn --secondary">Serwis</a>
+    <a href="https://body-works.pl/serwis/" class="bw-btn --secondary --wrench-icon">Serwis</a>
   </li>';
 
 
