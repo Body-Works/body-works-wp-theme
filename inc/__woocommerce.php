@@ -108,3 +108,29 @@ add_action('woocommerce_shop_loop_item_title', function () {
     echo "<h3 class='woocommerce-loop-product__model'>{$model}</h3>";
   }
 }, 9);
+
+/**
+ * Show the product title in the product loop. By default this is an H2.
+ */
+function woocommerce_template_loop_product_title()
+{
+  /** @var string $title */
+  $title = get_the_title();
+
+  /** @var string $classes */
+  $classes = '';
+
+  /** @var integer $length */
+  $length = strlen($title);
+
+  // Fine tune font size
+  if ($length >= 90) {
+    $classes .= "--xsmall";
+  } elseif ($length >= 70) {
+    $classes .= "--small";
+  } elseif ($length >= 60) {
+    $classes .= "--medium";
+  }
+
+  echo "<h2 class=\"bw-product-title  $classes " . esc_attr(apply_filters('woocommerce_product_loop_title_classes', 'woocommerce-loop-product__title')) . '">' . get_the_title() . '</h2>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+}

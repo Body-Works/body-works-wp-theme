@@ -4,11 +4,10 @@
 /// Primary button
 ///
 .bw-btn {
-
   border-radius: 4px;
   text-transform: uppercase !important;
 
-  padding: .5em 1em !important;
+  padding: 0.5em 1em !important;
 
   font-family: "Poppins", sans-serif !important;
   font-weight: 400 !important;
@@ -16,7 +15,7 @@
   display: block !important;
   line-height: 100% !important;
 
-  transition: background-color .5s ease-out !important;
+  transition: background-color 0.5s ease-out !important;
 
   &.--primary {
     background-color: var(--primary-green);
@@ -40,8 +39,8 @@
     font-family: "FontAwesome";
     content: "\f0ad";
     display: inline-block;
-    margin-right: .5em;
-    margin-top: -.3em;
+    margin-right: 0.5em;
+    margin-top: -0.3em;
   }
 }
 
@@ -107,16 +106,38 @@
 ///
 .bw-special-category-header {
   font-size: 2.25rem;
-  font-family: 'Gotham' !important;
+  font-family: "Gotham" !important;
   font-weight: 300 !important;
   text-transform: uppercase !important;
-  letter-spacing: .2em !important;
+  letter-spacing: 0.2em !important;
   line-height: 120% !important;
   margin: 0 0 !important;
 
   > small {
     display: block;
     color: var(--primary-green);
-    font-size: .678em;
+    font-size: 0.678em;
+  }
+}
+
+///
+/// Modify header look in a single list
+///
+.woocommerce ul.products li.product h2,
+.woocommerce ul.products li.product h2,
+.woocommerce-page ul.products li.product h2.bw-product-title {
+  &.--medium {
+    font-size: 1em !important;
+    line-height: 150% !important;
+  }
+
+  &.--small {
+    font-size: .85em !important;
+    line-height: 150% !important;
+  }
+
+  &.--xsmall {
+    font-size: .618em !important;
+    line-height: 140% !important;
   }
 }
