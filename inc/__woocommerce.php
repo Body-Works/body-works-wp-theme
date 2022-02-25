@@ -124,13 +124,7 @@ function woocommerce_template_loop_product_title()
   $length = strlen($title);
 
   // Fine tune font size
-  if ($length >= 90) {
-    $classes .= "--xsmall";
-  } elseif ($length >= 70) {
-    $classes .= "--small";
-  } elseif ($length >= 60) {
-    $classes .= "--medium";
-  }
+  $classes .= bwGetFontSizeModifier($length);
 
   echo "<h2 class=\"bw-product-title  $classes " . esc_attr(apply_filters('woocommerce_product_loop_title_classes', 'woocommerce-loop-product__title')) . '">' . get_the_title() . '</h2>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 }

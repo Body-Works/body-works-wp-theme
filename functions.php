@@ -11,6 +11,7 @@
 define("TEMPLATE_VERSION", "1.0.16");
 define("TEMPLATE_VARIANT", "body-works");
 
+require __DIR__ . "/inc/__helpers.php";
 require __DIR__ . "/inc/__header-modify.php";
 require __DIR__ . "/inc/__woocommerce.php";
 require __DIR__ . "/inc/salient-overrides/__header.php";

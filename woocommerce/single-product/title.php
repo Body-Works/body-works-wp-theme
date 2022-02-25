@@ -26,17 +26,21 @@ $cssModifier = '--no-variant';
 /** @var mixed $model */
 $model = get_field("model");
 
+/** @var string $title */
+$title = get_the_title();
+
+/** @var string $fontSizeModifier */
+$fontSizeModifier = bwGetFontSizeModifier(strlen($title));
+
 // Let's determine additional classes
 if (get_field("variant")) {
   $cssModifier = '--' . get_field("variant");
 }
-
 ?>
 
 <div class='bw-custom-product-description <?= $cssModifier ?>'>
-  <h1><?= get_the_title() ?></h1>
+  <h1 class="bw-custom-product-description__main-header <?= $fontSizeModifier; ?>"><?= $title; ?></h1>
 <?php if ($model): ?>
   <h2><?= get_field("model"); ?></h2>
 <?php endif; ?>
 </div>
-

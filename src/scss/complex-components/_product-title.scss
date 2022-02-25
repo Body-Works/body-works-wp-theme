@@ -75,6 +75,16 @@ $product-variants: (
     }
   }
 
+  &__main-header {
+    &.--small {
+      font-size: .6em !important;
+    }
+
+    &.--xsmall {
+      font-size: .5em !important;
+    }
+  }
+
   ///
   /// Responsive styles
   ///
