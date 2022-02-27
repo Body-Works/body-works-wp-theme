@@ -1,0 +1,74 @@
+@use "../config";
+#header-outer {
+  .bw-alternative-logo-grid {
+    &__column {
+      > img {
+        height: 55px;
+        width: auto;
+        margin: 0 0;
+      }
+
+    }
+
+    &__column {
+      display: none;
+    }
+  }
+
+  // LG
+  @media only screen and (min-width: config.$breakpoint-lg) {
+
+    &.transparent {
+      #logo {
+        visibility: hidden;
+        // position: absolute !important;
+      }
+    }
+
+    &.fixed-menu {
+      .bw-alternative-logo-grid {
+        display: none !important;
+      }
+    }
+
+    .bw-alternative-logo-grid {
+      padding-top: 20px;
+
+      position: absolute;
+      top: 0;
+
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-content: stretch;
+      align-items: center;
+
+      border: solid 1px yellow;
+      width: 50vw;
+      left: 25vw;
+
+      &__column{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+
+        > img {
+          height: auto;
+          width: 100px;
+          margin: 0 0;
+        }
+      }
+
+      // Logos fine tunnning
+
+    }
+  }
+}

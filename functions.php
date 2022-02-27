@@ -8,8 +8,9 @@
  * @author Konrad Fedorczyk <contact@realhe.ro>
  * @link https://github.com/fedek6/body-works
  */
-define("TEMPLATE_VERSION", "1.0.17");
-define("TEMPLATE_VARIANT", "body-works");
+
+// Theme "hard" configuration.
+require __DIR__ . "/theme-config.php";
 
 require __DIR__ . "/inc/__helpers.php";
 require __DIR__ . "/inc/__header-modify.php";
