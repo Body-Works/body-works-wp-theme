@@ -21,13 +21,20 @@
     &__thumb {
       text-align: center !important;
       // height: 300px;
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      height: 300px !important;
+      max-height: 300px !important;
+      overflow: hidden;
+
 
       img {
-        height: 300px !important;
+        // height: 300px !important;
         max-height: 300px !important;
-        width: auto;
-        max-width: 100%;
+        width: auto !important;
+        max-width: 100% !important;
       }
     }
 
