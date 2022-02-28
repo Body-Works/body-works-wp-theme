@@ -11,11 +11,11 @@ function bwGetFontSizeModifier(int $length): string
   $modifier = "";
 
   // Fine tune font size
-  if ($length >= 90) {
+  if ($length >= 80) {
     $modifier .= "--xsmall";
-  } elseif ($length >= 70) {
-    $modifier .= "--small";
   } elseif ($length >= 60) {
+    $modifier .= "--small";
+  } elseif ($length >= 50) {
     $modifier .= "--medium";
   }
 
