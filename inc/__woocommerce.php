@@ -188,15 +188,23 @@ function set_automatic_product_ordering($post_id, $post)
 /**
  * Add model column to products.
  */
-add_filter( 'manage_product_posts_columns', 'bw_filter_posts_columns' );
-function bw_filter_posts_columns( $columns ) {
+add_filter('manage_product_posts_columns', 'bw_filter_posts_columns');
+function bw_filter_posts_columns($columns)
+{
   $columns['model'] = "Model";
+  $columns['order'] = "Order";
   return $columns;
 }
 
-add_action( 'manage_product_posts_custom_column', 'bw_pop_column', 10, 2);
-function bw_pop_column( $column, $post_id ) {
-  if ( 'model' === $column ) {
-    echo get_field( "model", $post_id);
+add_action('manage_product_posts_custom_column', 'bw_pop_column', 10, 2);
+function bw_pop_column($column, $post_id)
+{
+  switch ($column) {
+    case "model":
+      echo get_field("model", $post_id);
+      break;
+    case "order":
+      echo get_field("order", $post_id);
+      break;
   }
 }
