@@ -138,9 +138,9 @@ function custom_woocommerce_get_catalog_ordering_args($args)
 {
   $orderby_value = isset($_GET['orderby']) ? wc_clean($_GET['orderby']) : apply_filters('woocommerce_default_catalog_orderby', get_option('woocommerce_default_catalog_orderby'));
   if ('model' == $orderby_value) {
-    $args['orderby'] = 'meta_value_num';
+    $args['orderby'] = 'meta_value';
     $args['order'] = 'ASC';
-    $args['meta_key'] = 'order';
+    $args['meta_key'] = 'model';
   }
   return $args;
 }
@@ -175,7 +175,7 @@ function set_automatic_product_ordering($post_id, $post)
 
   if ($model) {
     $matches = [];
-    preg_match("/[0-9]+[a-z]*/im", $model, $matches);
+    preg_match("/[0-9]+[a-z_]*[0-9]*/im", $model, $matches);
 
     if (!empty($matches)) {
       update_field("order", $matches[0], $post_id);
@@ -192,7 +192,7 @@ add_filter('manage_product_posts_columns', 'bw_filter_posts_columns');
 function bw_filter_posts_columns($columns)
 {
   $columns['model'] = "Model";
-  $columns['order'] = "Order";
+  // $columns['order'] = "Order";
   return $columns;
 }
 
@@ -203,8 +203,10 @@ function bw_pop_column($column, $post_id)
     case "model":
       echo get_field("model", $post_id);
       break;
-    case "order":
+
+    // Note needded any more
+    /* case "order":
       echo get_field("order", $post_id);
-      break;
+      break; */
   }
 }
