@@ -43,7 +43,7 @@ add_action('wp', 'njengah_remove_zoom_effect_theme_support', 99);
 function njengah_remove_zoom_effect_theme_support()
 {
   remove_theme_support('wc-product-gallery-zoom');
-  remove_theme_support('wc-product-gallery-lightbox');
+  // remove_theme_support('wc-product-gallery-lightbox');
   remove_theme_support('wc-product-gallery-slider');
 }
 
