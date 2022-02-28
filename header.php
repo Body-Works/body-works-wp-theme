@@ -227,7 +227,7 @@ $using_header_buttons = nectar_header_button_check(); ?>
 	} ?>
 
 	<header id="top">
-		<div class="container">
+		<div class="container bw-decorated-header">
 			<div class="row">
 				<div class="col span_3">
 
@@ -235,7 +235,12 @@ $using_header_buttons = nectar_header_button_check(); ?>
 						<?php nectar_logo_output($activate_transparency, $sideWidgetClass, $using_mobile_logo); ?>
 					</a>
 
-          <?php require(__DIR__ . "/inc/__logo-grid.php"); ?>
+          <?php
+            /**
+             * Add a grid logo to the header.
+             */
+            require(__DIR__ . "/inc/__logo-grid.php");
+          ?>
 
 					<?php if($headerFormat == 'centered-menu-bottom-bar') {
 						$has_pull_left_menu = (has_nav_menu('top_nav_pull_left')) ? 'true' : 'false'; ?>
