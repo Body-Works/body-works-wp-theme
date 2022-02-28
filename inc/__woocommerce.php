@@ -139,8 +139,8 @@ function custom_woocommerce_get_catalog_ordering_args($args)
   $orderby_value = isset($_GET['orderby']) ? wc_clean($_GET['orderby']) : apply_filters('woocommerce_default_catalog_orderby', get_option('woocommerce_default_catalog_orderby'));
   if ('model' == $orderby_value) {
     $args['orderby'] = 'meta_value_num';
-    $args['order'] = 'DESC';
-    $args['meta_key'] = 'model';
+    $args['order'] = 'ASC';
+    $args['meta_key'] = 'order';
   }
   return $args;
 }
@@ -158,4 +158,45 @@ add_filter('woocommerce_default_catalog_orderby', 'custom_default_catalog_orderb
 function custom_default_catalog_orderby()
 {
   return 'model';
+}
+
+/**
+ * Generate automatic order meta.
+ * Using model create data for ordering.
+ */
+add_action('save_post', 'set_automatic_product_ordering', 10, 3);
+function set_automatic_product_ordering($post_id, $post)
+{
+  if ('product' !== $post->post_type) {
+    return;
+  }
+
+  $model = get_field("model");
+
+  if ($model) {
+    $matches = [];
+    preg_match("/[0-9]+[a-z]*/im", $model, $matches);
+
+    if (!empty($matches)) {
+      update_field("order", $matches[0], $post_id);
+    } else {
+      update_field("order", $model, $post_id);
+    }
+  }
+}
+
+/**
+ * Add model column to products.
+ */
+add_filter( 'manage_product_posts_columns', 'bw_filter_posts_columns' );
+function bw_filter_posts_columns( $columns ) {
+  $columns['model'] = "Model";
+  return $columns;
+}
+
+add_action( 'manage_product_posts_custom_column', 'bw_pop_column', 10, 2);
+function bw_pop_column( $column, $post_id ) {
+  if ( 'model' === $column ) {
+    echo get_field( "model", $post_id);
+  }
 }
