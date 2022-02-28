@@ -128,3 +128,34 @@ function woocommerce_template_loop_product_title()
 
   echo "<h2 class=\"bw-product-title  $classes " . esc_attr(apply_filters('woocommerce_product_loop_title_classes', 'woocommerce-loop-product__title')) . '">' . get_the_title() . '</h2>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 }
+
+
+/**
+ * Woocommerce sort by model.
+ */
+add_filter('woocommerce_get_catalog_ordering_args', 'custom_woocommerce_get_catalog_ordering_args');
+function custom_woocommerce_get_catalog_ordering_args($args)
+{
+  $orderby_value = isset($_GET['orderby']) ? wc_clean($_GET['orderby']) : apply_filters('woocommerce_default_catalog_orderby', get_option('woocommerce_default_catalog_orderby'));
+  if ('model' == $orderby_value) {
+    $args['orderby'] = 'meta_value_num';
+    $args['order'] = 'DESC';
+    $args['meta_key'] = 'model';
+  }
+  return $args;
+}
+
+
+add_filter('woocommerce_default_catalog_orderby_options', 'custom_woocommerce_catalog_orderby');
+add_filter('woocommerce_catalog_orderby', 'custom_woocommerce_catalog_orderby');
+function custom_woocommerce_catalog_orderby($sortby)
+{
+  $sortby['model'] = 'Model';
+  return $sortby;
+}
+
+add_filter('woocommerce_default_catalog_orderby', 'custom_default_catalog_orderby');
+function custom_default_catalog_orderby()
+{
+  return 'model';
+}
