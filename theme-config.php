@@ -8,7 +8,7 @@
  * @author Konrad Fedorczyk <contact@realhe.ro>
  * @link https://github.com/fedek6/body-works
  */
-define("TEMPLATE_VERSION", "1.0.18");
+define("TEMPLATE_VERSION", "1.0.19");
 define("TEMPLATE_VARIANT", "body-works");
 
 abstract class BwConfig {
