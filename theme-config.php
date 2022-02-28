@@ -21,7 +21,7 @@ abstract class BwConfig {
     ],
     [
       "image"     => "logo-body-worksout.png",
-      "url"       => "https://body-works.pl",
+      "url"       => "https://www.bodyworksout.pl/",
       "modifier"  => "--body-worksout",
     ],
     [

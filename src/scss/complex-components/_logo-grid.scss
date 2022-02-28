@@ -7,7 +7,6 @@
         width: auto;
         margin: 0 0;
       }
-
     }
 
     &__column {
@@ -17,7 +16,6 @@
 
   // LG
   @media only screen and (min-width: config.$breakpoint-lg) {
-
     &.transparent {
       #logo {
         visibility: hidden;
@@ -46,9 +44,12 @@
 
       // border: solid 1px yellow;
       width: 50vw;
-      left: 25vw;
 
-      &__column{
+      // Note this is slightly of the center
+      // due to the visual balance of the page
+      left: 23vw;
+
+      &__column {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -65,10 +66,38 @@
           width: 100px;
           margin: 0 0;
         }
+
+        ///
+        /// Logos fine tunnning
+        ///
+        &.--body-worksout > img {
+          width: 140px;
+        }
+
+        &.--kids-fitness > img {
+          width: 140px;
+        }
+
+        &.--fit-system > img {
+          width: 90px;
+        }
+
+        &.--fit-energy > img {
+          width: 90px;
+        }
       }
 
-      // Logos fine tunnning
+      ///
+      /// Link logo effects
+      ///
+      a.bw-alternative-logo-grid__column {
+        transition: transform 0.25s ease-out;
+        transform: scale3d(1, 1, 1);
 
+        &:hover {
+          transform: scale3d(1.1, 1.1, 1.1);
+        }
+      }
     }
   }
 }

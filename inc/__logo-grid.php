@@ -16,7 +16,7 @@
 <div class="bw-alternative-logo-grid">
   <?php foreach(BwConfig::$logos as $logo): ?>
     <?php if(!is_null($logo['url'])): ?>
-      <a class="bw-alternative-logo-grid__column <?= $logo['modifier']; ?>" href="<?= $logo['url']; ?>">
+      <a class="bw-alternative-logo-grid__column <?= $logo['modifier']; ?>" href="<?= $logo['url']; ?>" target="_blank">
         <img src="<?= get_stylesheet_directory_uri() . "/assets/img/{$logo['image']}" ?>" />
       </a>
     <?php else: ?>
