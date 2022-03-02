@@ -104,27 +104,29 @@
 ///
 /// Custom category header
 ///
-.bw-special-category-header {
-  font-size: 2.25rem;
-  font-family: "Gotham" !important;
-  font-weight: 300 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.2em !important;
-  line-height: 120% !important;
-  margin: 0 0 !important;
+#page-header-bg {
+  .bw-special-category-header {
+    font-size: 2.5rem;
+    font-family: "Gotham" !important;
+    font-weight: 300 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.2em !important;
+    line-height: 120% !important;
+    margin: 0 0 !important;
 
-  > small {
-    display: block;
-    color: var(--primary-green);
-    font-size: 0.678em;
-  }
-
-  ///
-  /// Modifiers
-  ///
-  &.--yellow {
     > small {
-      color: var(--secondary-yellow);
+      display: block;
+      color: var(--primary-green);
+      font-size: 0.678em;
+    }
+
+    ///
+    /// Modifiers
+    ///
+    &.--yellow {
+      > small {
+        color: var(--secondary-yellow);
+      }
     }
   }
 }

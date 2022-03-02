@@ -42,5 +42,5 @@ abstract class BwConfig {
   ];
 
   /** @var int $hederHeight Category header height */
-  public static $headerHeight = 300;
+  public static $headerHeight = 180;
 }
