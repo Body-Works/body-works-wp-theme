@@ -1,0 +1,156 @@
+[
+    {
+        "key": "group_621772a18856e",
+        "title": "Kategoria produktu",
+        "fields": [
+            {
+                "key": "field_621785d86384c",
+                "label": "Alternatywny nagłówek drugiego rzędu",
+                "name": "sub-header",
+                "type": "text",
+                "instructions": "Mniejsza część nagłówka",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_621772e40814d",
+                "label": "Alternatywny nagłówek",
+                "name": "alternative-header",
+                "type": "text",
+                "instructions": "Większa część nagłówka",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_621e3363802a9",
+                "label": "Dodatkowe klasy nagłówka",
+                "name": "additional-header-classes",
+                "type": "text",
+                "instructions": "Wpisz klasy (modyfikatory) dla nagłówka kategorii",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "taxonomy",
+                    "operator": "==",
+                    "value": "product_cat"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_6213b8e585c8c",
+        "title": "Produkt",
+        "fields": [
+            {
+                "key": "field_6213b8f3b87ff",
+                "label": "Model",
+                "name": "model",
+                "type": "text",
+                "instructions": "Wpisz tutaj model (kod) urządzenia",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6213c30aa846f",
+                "label": "Wariant identyfikacji wizualnej",
+                "name": "variant",
+                "type": "radio",
+                "instructions": "Wybierz wariant kolorystyczny identyfikacji wizualnej",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "bwe-eu-kombinowana-na-pylonie": "BWE EUROPEJSKA KOMBINOWANA NA PYLONIE",
+                    "bwe-eu-kombinowana": "BWE EUROPEJSKA KOMBINOWANA",
+                    "bwe-eu": "BWE EUROPEJSKA",
+                    "bwe-eu-na-pylonie": "BWE EUROPEJSKA NA PYLONIE",
+                    "bwzk-kompaktowa": "BWZK KOMPAKTOWA",
+                    "kids": "KIDS",
+                    "serwisowe": "SERWISOWE",
+                    "workout": "WORKOUT"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "",
+                "layout": "vertical",
+                "return_format": "value",
+                "save_other_choice": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "product"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    }
+]
