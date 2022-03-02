@@ -130,7 +130,18 @@
 }
 
 .bw-page-header-wrap {
-  // border: solid 10px yellow !important;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: flex-start;
+
+
+  > #page-header-bg {
+    max-width: 1420px;
+    padding: 0 90px;
+  }
 
   .page-header-bg-image::after {
     // display: none;
