@@ -144,7 +144,8 @@ function nectar_page_header($postid)
     if ($animate_in_effect == 'slide-down') {
       $wrapper_height_style = null;
     } else {
-      $wrapper_height_style = 'style="height: ' . $height . 'px;"';
+      // $wrapper_height_style = 'style="height: ' . $height . 'px;"';
+      $wrapper_height_style = 'style="height: ' . BwConfig::$headerHeight .'px;"';
     }
     if ($fullscreen_header == true && ($post->post_type == 'post' && is_single()) || $page_fullscreen_header == 'on') $wrapper_height_style = null; //diable slide down for fullscreen headers
 
@@ -157,7 +158,7 @@ function nectar_page_header($postid)
     $regular_page_header_midnight_override = 'data-midnight="' . $force_transparent_header_color . '"';
 
     if ($box_roll != 'on') {
-      echo '<div id="page-header-wrap" data-animate-in-effect="' . $animate_in_effect . '" data-midnight="' . $force_transparent_header_color . '" class="' . $fullscreen_class . '" ' . $wrapper_height_style . '>';
+      echo '<div id="page-header-wrap" data-animate-in-effect="' . $animate_in_effect . '" data-midnight="' . $force_transparent_header_color . '" class="bw-page-header-wrap ' . $fullscreen_class . '" ' . $wrapper_height_style . '>';
     }
     if (!empty($box_roll) && $box_roll == 'on') {
       wp_enqueue_style('box-roll');
@@ -174,7 +175,7 @@ function nectar_page_header($postid)
 
 
 ?>
-    <div class="<?php echo $not_loaded_class . ' ' . $fullscreen_class . $bottom_shadow_class . $hentry_post_class . $bg_overlay_class; ?>" <?php if (isset($post->post_type) && $post->post_type == 'post' && is_single()) echo 'data-post-hs="' . $post_header_style . '"'; ?> data-padding-amt="<?php echo $mobile_padding_influence; ?>" data-animate-in-effect="<?php echo $animate_in_effect; ?>" id="page-header-bg" <?php echo $regular_page_header_midnight_override; ?> data-text-effect="<?php echo $text_effect; ?>" data-bg-pos="<?php echo $bg_position; ?>" data-alignment="<?php echo (!empty($text_align)) ? $text_align : 'left'; ?>" data-alignment-v="<?php echo (!empty($text_align_v)) ? $text_align_v : 'middle'; ?>" data-parallax="<?php echo (!empty($parallax_bg) && $parallax_bg == 'on') ? '1' : '0'; ?>" data-height="<?php echo (!empty($height)) ? $height : '350'; ?>" style="<?php echo $bg_color_string; ?> <?php echo $starting_height; ?>">
+    <div class="<?php echo $not_loaded_class . ' ' . $fullscreen_class . $bottom_shadow_class . $hentry_post_class . $bg_overlay_class; ?>" <?php if (isset($post->post_type) && $post->post_type == 'post' && is_single()) echo 'data-post-hs="' . $post_header_style . '"'; ?> data-padding-amt="<?php echo $mobile_padding_influence; ?>" data-animate-in-effect="<?php echo $animate_in_effect; ?>" id="page-header-bg" <?php echo $regular_page_header_midnight_override; ?> data-text-effect="<?php echo $text_effect; ?>" data-bg-pos="<?php echo $bg_position; ?>" data-alignment="<?php echo (!empty($text_align)) ? $text_align : 'left'; ?>" data-alignment-v="<?php echo (!empty($text_align_v)) ? $text_align_v : 'middle'; ?>" data-parallax="<?php echo (!empty($parallax_bg) && $parallax_bg == 'on') ? '1' : '0'; ?>" data-height="<?= BwConfig::$headerHeight; ?>" style="<?php echo $bg_color_string; ?> height: <?= BwConfig::$headerHeight; ?>px">
 
       <?php
 
@@ -366,10 +367,11 @@ function nectar_page_header($postid)
 
               $alternativeHeader = get_field("alternative-header", $term);
               $subHeader = get_field("sub-header", $term);
+              $additionalHeaderClasses = strval(get_field("additional-header-classes", $term));
             ?>
             <div class="inner-wrap">
             <?php if($alternativeHeader): ?>
-              <h1 class="bw-special-category-header">
+              <h1 class="bw-special-category-header <?= $additionalHeaderClasses; ?>">
                 <small><?= esc_html($subHeader); ?></small>
                 <?= esc_html($alternativeHeader); ?>
               </h1>

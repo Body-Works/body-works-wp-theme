@@ -8,7 +8,7 @@
  * @author Konrad Fedorczyk <contact@realhe.ro>
  * @link https://github.com/fedek6/body-works
  */
-define("TEMPLATE_VERSION", "1.0.20");
+define("TEMPLATE_VERSION", "1.0.21");
 define("TEMPLATE_VARIANT", "body-works");
 
 abstract class BwConfig {
@@ -40,4 +40,7 @@ abstract class BwConfig {
       "modifier"  => "--fit-energy",
     ],
   ];
+
+  /** @var int $hederHeight Category header height */
+  public static $headerHeight = 300;
 }
