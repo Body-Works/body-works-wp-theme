@@ -1,0 +1,68 @@
+@use "../config";
+
+.bw-news-product {
+  // border: solid 1px Yellow;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+
+    margin-bottom: 1.5em;
+  }
+
+  &__title {
+    order: 0;
+    flex: 1 1 auto;
+    align-self: auto;
+
+    padding-right: 20px;
+
+    h3 {
+      // Badge
+      small {
+        border: solid 1px var(--border-light);
+        color: Black;
+        display: inline-block;
+        padding: .25em .5em !important;
+        border-radius: 4px;
+        font-size: .85em;
+
+        margin-bottom: 1em;
+      }
+
+      // Text
+      span {
+        display: block;
+
+      }
+    }
+  }
+
+  &__logo {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+
+    max-width: 25%;
+    // padding-top: 20px;
+
+    @media only screen and (min-width: config.$breakpoint-lg) {
+      max-width: 20%;
+    }
+  }
+
+
+  &__text {
+    text-align: justify;
+    color: var(--menu-gray);
+
+    @media only screen and (min-width: config.$breakpoint-lg) {
+      // max-width: 85%;
+      // padding-right: 20px;
+    }
+  }
+}
