@@ -15,27 +15,27 @@ abstract class BwConfig {
   /** @var array $logos Logos for the header grid */
   public static $logos = [
     [
-      "image"     => "logo-body-works.png",
+      "image"     => "logo-body-works.png?ver=2",
       "url"       => "https://body-works.pl",
       "modifier"  => "--body-works",
     ],
     [
-      "image"     => "logo-body-worksout.png",
+      "image"     => "logo-body-worksout.png?ver=2",
       "url"       => "https://www.bodyworksout.pl/",
       "modifier"  => "--body-worksout",
     ],
     [
-      "image"     => "logo-kids-fitness.png",
+      "image"     => "logo-kids-fitness.png?ver=2",
       "url"       => "http://silowniedladzieci.eu/",
       "modifier"  => "--kids-fitness",
     ],
     [
-      "image"     => "logo-fit-system.png",
+      "image"     => "logo-fit-system.png?ver=2",
       "url"       => "http://fit-system.pl",
       "modifier"  => "--fit-system",
     ],
     [
-      "image"     => "logo-fit-energy.png",
+      "image"     => "logo-fit-energy.png?ver=2",
       "url"       => null,
       "modifier"  => "--fit-energy",
     ],
