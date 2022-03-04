@@ -14,10 +14,14 @@ Run `Grunt` in default mode to create responsive images:
 grunt default
 ```
 
+### Translations
+
+Use `Poedit` with domain `body_works`.
+
 ### Snippets etc.
 
 To protect email addresses use:
 
 ```html
-<span data-email-protection="true">contact&#230;realhe.ro</span>
+<span data-email-protection="true">contact[małpa]realhe.ro</span>
 ```
