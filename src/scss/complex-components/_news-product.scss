@@ -27,9 +27,9 @@
         border: solid 1px var(--border-light);
         color: Black;
         display: inline-block;
-        padding: .25em .5em !important;
+        padding: 0.25em 0.5em !important;
         border-radius: 4px;
-        font-size: .85em;
+        font-size: 0.85em;
 
         margin-bottom: 1em;
       }
@@ -37,7 +37,6 @@
       // Text
       span {
         display: block;
-
       }
     }
   }
@@ -48,13 +47,25 @@
     align-self: auto;
 
     max-width: 25%;
-    // padding-top: 20px;
+
+    ///
+    /// Mods
+    ///
+    &.--body-worksout {
+      max-width: 30%;
+    }
 
     @media only screen and (min-width: config.$breakpoint-lg) {
       max-width: 20%;
+
+      ///
+      /// Mods
+      ///
+      &.--body-worksout {
+        max-width: 25%;
+      }
     }
   }
-
 
   &__text {
     text-align: justify;
