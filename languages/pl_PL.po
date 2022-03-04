@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-02-15 16:11+0100\n"
-"PO-Revision-Date: 2022-02-15 16:11+0100\n"
+"POT-Creation-Date: 2022-03-04 10:36+0100\n"
+"PO-Revision-Date: 2022-03-04 10:38+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -12,28 +12,103 @@ msgstr ""
 "X-Generator: Poedit 2.0.6\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-KeywordsList: esc_html_e;__\n"
+"X-Poedit-KeywordsList: esc_html_e;__;esc_html__\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: functions.php:77
+#: header.php:461
+msgid "Search.."
+msgstr ""
+
+#: inc/__woocommerce.php:28
 msgid "Evaluation"
 msgstr "Wycena"
 
-#: functions.php:114
+#: inc/__woocommerce.php:82
 msgid "Selected items"
 msgstr "Wybrane przedmioty"
 
-#: functions.php:117 woocommerce/cart/proceed-to-checkout-button.php:26
+#: inc/__woocommerce.php:85 woocommerce/cart/proceed-to-checkout-button.php:26
 msgid "Evaluate the products"
 msgstr "Przejdź do wyceny"
 
-#: functions.php:129
+#: inc/__woocommerce.php:97
 msgid ""
 "Please choose your items before a price evaluation.<br>You can do this by "
 "using product catalog:"
 msgstr ""
 "Prosimy o wybranie produktów przed wysyłką do wyceny.<br>Można dokonać tego "
 "na stronie z urządzeniami:"
+
+#: inc/salient-overrides/__header.php:270
+msgid "By"
+msgstr ""
+
+#: inc/salient-overrides/__header.php:276
+#: inc/salient-overrides/__header.php:290
+msgid "No Comments"
+msgstr ""
+
+#: inc/salient-overrides/__header.php:276
+#: inc/salient-overrides/__header.php:290
+msgid "One Comment "
+msgstr ""
+
+#: inc/salient-overrides/__header.php:276
+#: inc/salient-overrides/__header.php:290
+msgid "% Comments"
+msgstr ""
+
+#: inc/salient-overrides/__header.php:305
+#: inc/salient-overrides/__header.php:313
+#: inc/salient-overrides/__header.php:318
+msgid "Share this"
+msgstr ""
+
+#: inc/salient-overrides/__header.php:309
+msgid "Tweet this"
+msgstr ""
+
+#: inc/salient-overrides/__header.php:322
+msgid "Pin this"
+msgstr ""
+
+#: inc/salient-overrides/__header.php:387
+#: inc/salient-overrides/__header.php:595
+msgid "Sort Portfolio"
+msgstr ""
+
+#: inc/salient-overrides/__header.php:389
+#: inc/salient-overrides/__header.php:598
+msgid "All"
+msgstr ""
+
+#: inc/salient-overrides/__header.php:622
+msgid "All Posts By"
+msgstr ""
+
+#: inc/salient-overrides/__header.php:626
+msgid "Category"
+msgstr ""
+
+#: inc/salient-overrides/__header.php:630
+msgid "Tag"
+msgstr ""
+
+#: inc/salient-overrides/__header.php:636
+msgid "Daily Archives"
+msgstr ""
+
+#: inc/salient-overrides/__header.php:641
+msgid "Monthly Archives"
+msgstr ""
+
+#: inc/salient-overrides/__header.php:646
+msgid "Yearly Archives"
+msgstr ""
+
+#: inc/salient-overrides/__header.php:649
+msgid "Archives"
+msgstr ""
 
 #: woocommerce/cart/cart-empty.php:28
 msgid "Return to products"
@@ -59,6 +134,10 @@ msgstr ""
 msgid "Remove this item"
 msgstr ""
 
+#: woocommerce/cart/cart.php:89
+msgid "Available on backorder"
+msgstr ""
+
 #: woocommerce/cart/cart.php:136
 msgid "Coupon:"
 msgstr ""
@@ -66,6 +145,25 @@ msgstr ""
 #: woocommerce/cart/cart.php:141
 msgid "Update evaluation"
 msgstr "Zaaktualizuj"
+
+#: woocommerce/checkout/payment.php:33
+msgid ""
+"Sorry, it seems that there are no available payment methods for your state. "
+"Please contact us if you require assistance or wish to make alternate "
+"arrangements."
+msgstr ""
+
+#: woocommerce/checkout/payment.php:33
+msgid "Please fill in your details above to see available payment methods."
+msgstr ""
+
+#: woocommerce/checkout/payment.php:42
+#, php-format
+msgid ""
+"Since your browser does not support JavaScript, or it is disabled, please "
+"ensure you click the %1$sUpdate Totals%2$s button before placing your order. "
+"You may be charged more than the amount stated above if you fail to do so."
+msgstr ""
 
 #: woocommerce/checkout/payment.php:44
 msgid "Update totals"
@@ -81,6 +179,23 @@ msgstr ""
 
 #: woocommerce/checkout/thankyou.php:40 woocommerce/checkout/thankyou.php:82
 msgid "Thank you. Your order has been received."
+msgstr ""
+
+#: woocommerce/emails/customer-processing-order.php:28
+msgid "Thank you for your interest in our products."
+msgstr "Dziękujemy za zainteresowanie naszymi produktami."
+
+#: woocommerce/emails/customer-processing-order.php:30
+#, php-format
+msgid ""
+"Your request for quotation has been registered in our system under the "
+"number #%s. We will send the trade offer as close as possible."
+msgstr ""
+"Państwa zapytanie ofertowe zostało zarejestrowane w naszym systemie pod "
+"numerem #%s. Ofertę handlową prześlemy najszyciej jak to będzie możliwe."
+
+#: woocommerce/emails/customer-processing-order.php:55
+msgid "Thanks!"
 msgstr ""
 
 #~ msgid "Product estimation number:"
