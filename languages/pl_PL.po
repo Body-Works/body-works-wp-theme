@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-03-04 10:36+0100\n"
-"PO-Revision-Date: 2022-03-04 10:45+0100\n"
+"POT-Creation-Date: 2022-03-04 10:48+0100\n"
+"PO-Revision-Date: 2022-03-04 10:51+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -12,7 +12,7 @@ msgstr ""
 "X-Generator: Poedit 2.0.6\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-KeywordsList: esc_html_e;__;esc_html__\n"
+"X-Poedit-KeywordsList: esc_html_e;__;esc_html__;_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: header.php:461
@@ -114,7 +114,7 @@ msgstr ""
 msgid "Return to products"
 msgstr "Przejdź do urządzeń"
 
-#: woocommerce/cart/cart.php:30
+#: woocommerce/cart/cart.php:30 woocommerce/order/order-details.php:44
 msgid "Product"
 msgstr ""
 
@@ -126,7 +126,7 @@ msgstr ""
 msgid "Quantity"
 msgstr ""
 
-#: woocommerce/cart/cart.php:33
+#: woocommerce/cart/cart.php:33 woocommerce/checkout/review-order.php:115
 msgid "Total"
 msgstr ""
 
@@ -145,6 +145,14 @@ msgstr ""
 #: woocommerce/cart/cart.php:141
 msgid "Update evaluation"
 msgstr "Zaktualizuj"
+
+#: woocommerce/cart/mini-cart.php:72 woocommerce/checkout/review-order.php:68
+msgid "Subtotal"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:82
+msgid "No products in the cart."
+msgstr ""
 
 #: woocommerce/checkout/payment.php:33
 msgid ""
@@ -167,7 +175,7 @@ msgstr ""
 
 #: woocommerce/checkout/payment.php:44
 msgid "Update totals"
-msgstr "Zaaktualizuj"
+msgstr "Zaktualizuj"
 
 #: woocommerce/checkout/payment.php:51
 msgid "Send products for valuation"
@@ -177,8 +185,42 @@ msgstr "Wyślij do wyceny"
 msgid "Quantity: "
 msgstr ""
 
+#: woocommerce/checkout/thankyou.php:29
+msgid ""
+"Unfortunately your order cannot be processed as the originating bank/"
+"merchant has declined your transaction. Please attempt your purchase again."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:32
+msgid "Pay"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:34
+msgid "My account"
+msgstr ""
+
 #: woocommerce/checkout/thankyou.php:40 woocommerce/checkout/thankyou.php:82
 msgid "Thank you. Your order has been received."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:45
+msgid "Product estimation number:"
+msgstr "Numer wyceny:"
+
+#: woocommerce/checkout/thankyou.php:50
+msgid "Date:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:56
+msgid "Email:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:62
+msgid "Total:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:68
+msgid "Payment method:"
 msgstr ""
 
 #: woocommerce/emails/customer-processing-order.php:28
@@ -198,5 +240,10 @@ msgstr ""
 msgid "Thanks!"
 msgstr ""
 
-#~ msgid "Product estimation number:"
-#~ msgstr "Numer wyceny:"
+#: woocommerce/order/order-details.php:38
+msgid "Order details"
+msgstr ""
+
+#: woocommerce/order/order-details.php:82
+msgid "Note:"
+msgstr ""
