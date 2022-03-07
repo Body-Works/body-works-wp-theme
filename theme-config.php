@@ -43,4 +43,12 @@ abstract class BwConfig {
 
   /** @var int $hederHeight Category header height */
   public static $headerHeight = 180;
+
+  /** @var array$allowedMimes Allowed mimetypes */
+  public static $allowedMimes = [
+    '3ds' => 'image/x-3ds',
+    'dwg' => 'image/vnd.dwg',
+    'max' => 'application/CDFV2',
+    'skp' => 'application/octet-stream'
+  ];
 }

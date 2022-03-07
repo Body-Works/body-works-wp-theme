@@ -13,6 +13,7 @@
 require __DIR__ . "/theme-config.php";
 
 require __DIR__ . "/inc/__helpers.php";
+require __DIR__ . "/inc/__wp.php";
 require __DIR__ . "/inc/__header-modify.php";
 require __DIR__ . "/inc/__woocommerce.php";
 require __DIR__ . "/inc/salient-overrides/__header.php";
