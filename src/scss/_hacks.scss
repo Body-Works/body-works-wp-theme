@@ -132,4 +132,11 @@ html {
       }
     }
   }
+
+  // Force shortcode buttons to be uppercased
+  body[data-button-style*="slightly_rounded"]
+    .col.dark
+    .nectar-button.see-through-2.--force-uppercase {
+      text-transform: uppercase !important;
+  }
 }

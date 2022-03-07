@@ -3,4 +3,10 @@ html body {
   .--force-uppercase {
     text-transform: uppercase !important;
   }
+
+  /// Force button to take full width
+  .--btn-force-full-width {
+    display: block !important;
+    text-align: center !important;
+  }
 }
