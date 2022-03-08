@@ -138,7 +138,7 @@ function custom_woocommerce_get_catalog_ordering_args($args)
 {
   $orderby_value = isset($_GET['orderby']) ? wc_clean($_GET['orderby']) : apply_filters('woocommerce_default_catalog_orderby', get_option('woocommerce_default_catalog_orderby'));
   if ('model' == $orderby_value) {
-    $args['orderby'] = 'meta_value';
+    $args['orderby'] = 'meta_value title';
     $args['order'] = 'ASC';
     $args['meta_key'] = 'model';
   }
