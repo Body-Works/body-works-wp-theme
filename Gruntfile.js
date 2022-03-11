@@ -90,7 +90,7 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          './assets/js/main.js': ['<%= meta.srcPath %>/js/main.js'],
+          './assets/js/main.js': ['<%= meta.srcPath %>/js/main.js', '<%= meta.srcPath %>/js/baguetteBox.js'],
         }
       },
     },

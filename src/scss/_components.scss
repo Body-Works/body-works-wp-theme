@@ -179,3 +179,14 @@
     line-height: 140% !important;
   }
 }
+
+///
+/// Custom gallery
+///
+.bw-custom-gallery {
+  .portfolio-items .col .work-item.style-2 h3 {
+    // border: solid 1px Red;
+    font-size: 1.25em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+  }
+}

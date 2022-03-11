@@ -17,4 +17,10 @@ window.addEventListener("load", (event) => {
       email.replaceWith(replacement);
     }
   }
+
+  /**
+   * Lighbox
+   * @link https://github.com/feimosi/baguetteBox.js
+   */
+  baguetteBox.run('.bw-custom-gallery');
 });
