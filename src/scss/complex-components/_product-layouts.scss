@@ -1,0 +1,87 @@
+@use "../config";
+
+.bw-product-layout {
+  display: grid;
+  grid-gap: 1rem;
+  // border: solid 1px Red;
+
+  img {
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  h4 {
+    font-size: 1.5em !important;
+    margin-bottom: 1.25em !important;
+  }
+
+  // Desktop
+  @media only screen and (min-width: config.$breakpoint-lg) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  ///
+  /// Layout 1
+  ///
+  &.--001 {
+    grid-template-areas:
+      "description_1"
+      "illustration_1"
+      "description_2"
+      "illustration_2"
+      "description_3"
+      "illustration_3"
+      "btns"
+      "illustration_4";
+
+    @media only screen and (min-width: config.$breakpoint-lg) {
+      grid-template-areas:
+        "description_1 description_2"
+        "illustration_1 illustration_2"
+        "description_3 btns"
+        "illustration_3 ."
+        "illustration_4 illustration_4";
+    }
+  }
+
+  // Grid areas
+  .description_1 {
+    grid-area: description_1;
+  }
+  .description_2 {
+    grid-area: description_2;
+  }
+  .description_3 {
+    grid-area: description_3;
+  }
+  .description_4 {
+    grid-area: description_4;
+  }
+  .illustration_1 {
+    grid-area: illustration_1;
+  }
+  .illustration_2 {
+    grid-area: illustration_2;
+  }
+  .illustration_3 {
+    grid-area: illustration_3;
+  }
+  .illustration_4 {
+    grid-area: illustration_4;
+  }
+  .btns {
+    grid-area: btns;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    grid-gap: .5rem;
+
+    .nectar-button {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      text-align: center;
+    }
+  }
+}
