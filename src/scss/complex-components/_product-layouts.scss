@@ -73,15 +73,21 @@
   }
   .btns {
     grid-area: btns;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: start;
-    grid-gap: .5rem;
+
+    > div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+      justify-content: start;
+      grid-gap: .5rem;
+    }
+
 
     .nectar-button {
       padding-left: 0 !important;
       padding-right: 0 !important;
       text-align: center;
+      text-transform: uppercase !important;
     }
   }
 }

@@ -107,26 +107,54 @@
     />
   </div>
   <div class="bw-product-layout__btns btns">
-    <a
-      class="nectar-button medium see-through-2 --force-uppercase"
-      style="border-color: rgba(242, 134, 26, 0.75); color: rgb(242, 134, 26); visibility: visible; background-color: transparent;"
-      target="_blank"
-      href="https://body-works.pl/wp-content/uploads/2022/03/BWZK01_SURFER_BIEGACZ_TWISTER.pdf"
-      data-color-override="#f2861a"
-      data-hover-color-override="#f2861a"
-      data-hover-text-color-override="#ffffff"
-      ><span>Karta katalogowa</span></a
-    >
-    <a
-      class="nectar-button medium see-through-2 --force-uppercase"
-      style="border-color: rgba(242, 134, 26, 0.75); color: rgb(242, 134, 26); visibility: visible; background-color: transparent;"
-      target="_blank"
-      href="https://body-works.pl/wp-content/uploads/2022/03/BWZK01_SURFER_BIEGACZ_TWISTER.pdf"
-      data-color-override="#f2861a"
-      data-hover-color-override="#f2861a"
-      data-hover-text-color-override="#ffffff"
-      ><span>Karta katalogowa</span></a
-    >
+    <div>
+      <a
+        class="nectar-button medium see-through-2 --force-uppercase"
+        style="border-color: rgba(242, 134, 26, 0.75); color: rgb(242, 134, 26); visibility: visible; background-color: transparent;"
+        target="_blank"
+        href="https://body-works.pl/wp-content/uploads/2022/03/BWZK01_SURFER_BIEGACZ_TWISTER.pdf"
+        data-color-override="#3069a6"
+        data-hover-color-override="#3069a6"
+        data-hover-text-color-override="#ffffff"
+        ><span>Karta katalogowa</span></a
+      ><a
+        class="nectar-button medium see-through-2 --force-uppercase"
+        style="border-color: rgba(242, 134, 26, 0.75); color: rgb(242, 134, 26); visibility: visible; background-color: transparent;"
+        target="_blank"
+        href="https://body-works.pl/wp-content/uploads/2022/03/BWZK01_SURFER_BIEGACZ_TWISTER.dwg"
+        data-color-override="#3069a6"
+        data-hover-color-override="#3069a6"
+        data-hover-text-color-override="#ffffff"
+        ><span>Rysunek .dwg</span></a
+      ><a
+        class="nectar-button medium see-through-2 --force-uppercase"
+        style="border-color: rgba(242, 134, 26, 0.75); color: rgb(242, 134, 26); visibility: visible; background-color: transparent;"
+        target="_blank"
+        href="https://body-works.pl/wp-content/uploads/2022/03/BWZK01_SURFER_BIEGACZ_TWISTER.skp"
+        data-color-override="#3069a6"
+        data-hover-color-override="#3069a6"
+        data-hover-text-color-override="#ffffff"
+        ><span>Rysunek .skp</span></a
+      ><a
+        class="nectar-button medium see-through-2 --force-uppercase"
+        style="border-color: rgba(242, 134, 26, 0.75); color: rgb(242, 134, 26); visibility: visible; background-color: transparent;"
+        target="_blank"
+        href="https://body-works.pl/wp-content/uploads/2022/03/BWZK01_SURFER_BIEGACZ_TWISTER.max"
+        data-color-override="#3069a6"
+        data-hover-color-override="#3069a6"
+        data-hover-text-color-override="#ffffff"
+        ><span>Rysunek .max</span></a
+      ><a
+        class="nectar-button medium see-through-2 --force-uppercase"
+        style="border-color: rgba(242, 134, 26, 0.75); color: rgb(242, 134, 26); visibility: visible; background-color: transparent;"
+        target="_blank"
+        href="https://body-works.pl/wp-content/uploads/2022/03/BWZK01_SURFER_BIEGACZ_TWISTER.3ds"
+        data-color-override="#3069a6"
+        data-hover-color-override="#3069a6"
+        data-hover-text-color-override="#ffffff"
+        ><span>Rysunek .3ds</span></a
+      >
+    </div>
   </div>
   <div class="bw-product-layout__illustration illustration_4">
     <img
