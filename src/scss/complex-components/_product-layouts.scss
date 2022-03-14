@@ -29,11 +29,16 @@
     grid-area: btns;
 
     > div {
+
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: start;
       justify-content: start;
       grid-gap: .5rem;
+
+      @media only screen and (min-width: config.$breakpoint-lg) {
+        padding-top: 60px;
+      }
     }
 
 
