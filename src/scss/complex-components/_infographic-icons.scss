@@ -1,0 +1,50 @@
+@use "../config";
+
+.bw-infographic-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+
+  > div {
+    order: 0;
+    flex: 0 1 49%;
+    align-self: auto;
+    text-align: center;
+    position: relative;
+
+    img {
+      width: 110px !important;
+      height: auto;
+      display: inline-block;
+    }
+
+    @media only screen and (min-width: config.$breakpoint-lg) {
+      flex: 0 1 auto;
+      padding-right: 15px;
+    }
+  }
+
+  @media only screen and (min-width: config.$breakpoint-lg) {
+    justify-content: flex-start;
+    margin-bottom: 30px;
+
+    div ~ div {
+      // border-left: solid 1px Yellow;
+      padding: 0 15px;
+
+      &::after {
+        content: "";
+        height: 34%;
+        width: 1px;
+        position: absolute;
+        display: block;
+        background-color: var(--primary-green);
+        top: 33%;
+        left: 0;
+      }
+    }
+  }
+}
