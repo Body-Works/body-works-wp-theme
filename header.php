@@ -4,16 +4,6 @@
 <head>
 
 
-<?php
-if ( is_front_page() ) :
-    remove_action( 'wp_head', '_wp_render_title_tag', 1 );
-	?>
-	<title>Siłownia plenerowa zenętrzna Cena siłownie zewnętrzne</title>
-	<?php
-else :
-
-endif;
-
 ?>
 <!-- Meta Tags -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -34,7 +24,15 @@ endif;
 
 <?php wp_head(); ?>
 
-<?php if(!empty($options['google-analytics'])) echo $options['google-analytics']; ?>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=<?= BwConfig::$gaId; ?>"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '<?= BwConfig::$gaId; ?>');
+</script>
 
 </head>
 

@@ -8,7 +8,7 @@
  * @author Konrad Fedorczyk <contact@realhe.ro>
  * @link https://github.com/fedek6/body-works
  */
-define("TEMPLATE_VERSION", "1.0.37");
+define("TEMPLATE_VERSION", "1.0.38");
 define("TEMPLATE_VARIANT", "body-works");
 
 abstract class BwConfig {
@@ -44,11 +44,14 @@ abstract class BwConfig {
   /** @var int $hederHeight Category header height */
   public static $headerHeight = 180;
 
-  /** @var array$allowedMimes Allowed mimetypes */
+  /** @var array $allowedMimes Allowed mimetypes */
   public static $allowedMimes = [
     '3ds' => 'image/x-3ds',
     'dwg' => 'image/vnd.dwg',
     'max' => 'application/CDFV2',
     'skp' => 'application/octet-stream'
   ];
+
+  /** @var string $gaId Google analytics id */
+  public static $gaId = "aaaa";
 }
