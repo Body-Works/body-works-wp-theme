@@ -1,12 +1,21 @@
-<!doctype html>
-
+<?php
+  /**
+   * Template "hard" configuration.
+   *
+   * Do not modify files here! Use repository like a civilized programmer.
+   * Mess with the best, die like the rest! Hack the planet!
+   *
+   * @author Konrad Fedorczyk <contact@realhe.ro>
+   * @link https://github.com/fedek6/body-works
+   */
+  global $post;
+  global $woocommerce;
+?><!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
-
-
-?>
 <!-- Meta Tags -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="<?= get_field("meta_description", $post->ID) ? get_field("meta_description", $post->ID) :  get_bloginfo("description"); ?>">
 
 <?php $options = get_nectar_theme_options(); ?>
 
@@ -37,9 +46,6 @@
 </head>
 
 <?php
-
-global $post;
-global $woocommerce;
 
 //check if parallax nectar slider is being used
 $parallax_nectar_slider = using_nectar_slider();

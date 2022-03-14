@@ -53,5 +53,5 @@ abstract class BwConfig {
   ];
 
   /** @var string $gaId Google analytics id */
-  public static $gaId = "aaaa";
+  public static $gaId = "UA-16322686-4";
 }
