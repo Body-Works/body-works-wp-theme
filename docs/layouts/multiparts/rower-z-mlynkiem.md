@@ -29,5 +29,5 @@ Usiąść wygodnie na siedzisku, oprzeć stopy na pedałach. Rozpocząć pedało
 ```
 
 ```html
- <img class="alignnone size-full wp-image-6366" src="https://body-works.stronazen.pl/wp-content/uploads/2019/02/Zrzut-ekranu-2019-02-7-o-16.10.08.png" alt="" width="1262" height="576" srcset=" https://body-works.pl/wp-content/uploads/2019/02/Zrzut-ekranu-2019-02-7-o-16.10.08.png 1262w, https://body-works.pl/wp-content/uploads/2019/02/Zrzut-ekranu-2019-02-7-o-16.10.08-300x137.png 300w, https://body-works.pl/wp-content/uploads/2019/02/Zrzut-ekranu-2019-02-7-o-16.10.08-768x351.png 768w, https://body-works.pl/wp-content/uploads/2019/02/Zrzut-ekranu-2019-02-7-o-16.10.08-1024x467.png 1024w, https://body-works.pl/wp-content/uploads/2019/02/Zrzut-ekranu-2019-02-7-o-16.10.08-600x274.png 600w " sizes="(max-width: 1262px) 100vw, 1262px">
+ <img src="https://body-works.pl/wp-content/uploads/2022/03/rower-z-mlynkiem-skala-trudnosci.png" alt="Rower z młynkiem skala trudności łatwe">
 ```

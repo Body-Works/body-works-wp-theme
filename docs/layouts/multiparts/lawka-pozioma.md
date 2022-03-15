@@ -29,5 +29,6 @@ Położyć się na ławce na plecach. Nogi zgiąć w kolanach, stopy zaprzeć o 
 ```
 
 ```html
-    <img src="https://body-works.pl/wp-content/themes/body-works/assets/img/info-medium-difficulity.png" alt="Średnia trudność" >
+ <img src="https://body-works.pl/wp-content/uploads/2022/03/lawka-pozioma-skala-trudnosci.png" alt="Ławka pozioma skala trudności łatwe">
+  
 ```
