@@ -56,6 +56,15 @@ html {
   }
 
   ///
+  /// Current menu item
+  ///
+  .woocommerce #sidebar div ul li.current-cat {
+    > a {
+      color: var(--primary-green) !important;
+    }
+  }
+
+  ///
   /// Product listings
   ///
   @media only screen and (min-width: config.$breakpoint-desktop) {
