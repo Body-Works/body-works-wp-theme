@@ -21,7 +21,6 @@
     grid-template-columns: 1fr 1fr;
   }
 
-
   ///
   /// Global
   ///
@@ -29,18 +28,16 @@
     grid-area: btns;
 
     > div {
-
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: start;
       justify-content: start;
-      grid-gap: .5rem;
+      grid-gap: 0.5rem;
 
       @media only screen and (min-width: config.$breakpoint-lg) {
         padding-top: 60px;
       }
     }
-
 
     .nectar-button {
       padding-left: 0 !important;
@@ -54,6 +51,9 @@
   /// Layout 1
   /// For three elements
   ///
+  $grid-areas-001: description_1 description_2 description_3 description_4
+    illustration_1 illustration_2 illustration_3 illustration_4;
+
   &.--001 {
     grid-template-areas:
       "description_1"
@@ -73,38 +73,23 @@
         "illustration_3 ."
         "illustration_4 illustration_4";
     }
-  }
 
-  // Grid areas
-  .description_1 {
-    grid-area: description_1;
-  }
-  .description_2 {
-    grid-area: description_2;
-  }
-  .description_3 {
-    grid-area: description_3;
-  }
-  .description_4 {
-    grid-area: description_4;
-  }
-  .illustration_1 {
-    grid-area: illustration_1;
-  }
-  .illustration_2 {
-    grid-area: illustration_2;
-  }
-  .illustration_3 {
-    grid-area: illustration_3;
-  }
-  .illustration_4 {
-    grid-area: illustration_4;
+    // Grid areas
+    @each $area in $grid-areas-001 {
+      .#{$area} {
+        grid-area: $area;
+      }
+    }
   }
 
   ///
   /// Layout 2
   /// For five elements
   ///
+  $grid-areas-002: description_1 description_2 description_3 description_4
+    description_5 illustration_1 illustration_2 illustration_3 illustration_4
+    illustration_5 illustration_6;
+
   &.--002 {
     grid-template-areas:
       "description_1"
@@ -130,40 +115,63 @@
         "illustration_5 ."
         "illustration_6 illustration_6";
     }
+
+    // Grid areas
+    @each $area in $grid-areas-002 {
+      .#{$area} {
+        grid-area: $area;
+      }
+    }
   }
 
-  // Grid areas
-  .description_1 {
-    grid-area: description_1;
-  }
-  .description_2 {
-    grid-area: description_2;
-  }
-  .description_3 {
-    grid-area: description_3;
-  }
-  .description_4 {
-    grid-area: description_4;
-  }
-  .description_5 {
-    grid-area: description_5;
-  }
-  .illustration_1 {
-    grid-area: illustration_1;
-  }
-  .illustration_2 {
-    grid-area: illustration_2;
-  }
-  .illustration_3 {
-    grid-area: illustration_3;
-  }
-  .illustration_4 {
-    grid-area: illustration_4;
-  }
-  .illustration_5 {
-    grid-area: illustration_5;
-  }
-  .illustration_6 {
-    grid-area: illustration_6;
+  ///
+  /// Layout 3
+  /// For two elements
+  ///
+  $grid-areas-003: description_1 description_2 illustration_1 illustration_2
+    illustration_3 illustration_4;
+
+  &.--003 {
+    grid-template-columns: 55fr 45fr;
+
+    grid-template-areas:
+      "description_1 description_1"
+      "illustration_1 illustration_1"
+      "description_2 description_2"
+      "illustration_2 illustration_2"
+      "illustration_3 illustration_3"
+      "illustration_4 illustration_4"
+      "btns btns";
+
+    @media only screen and (min-width: config.$breakpoint-lg) {
+      grid-template-areas:
+        "description_1 description_1"
+        "illustration_1 illustration_1"
+        "description_2 description_2"
+        "illustration_2 illustration_2"
+        "illustration_3 illustration_4"
+        "btns btns";
+    }
+
+    // Grid areas
+    @each $area in $grid-areas-002 {
+      .#{$area} {
+        grid-area: $area;
+      }
+    }
+
+    // Modifications
+    .illustration_1,
+    .illustration_2 {
+      margin-bottom: 20px;
+      border: solid 1px Red;
+    }
+
+    .btns > div {
+      @media only screen and (min-width: config.$breakpoint-lg) {
+        padding-top: 0;
+        padding-bottom: 20px;
+      }
+    }
   }
 }

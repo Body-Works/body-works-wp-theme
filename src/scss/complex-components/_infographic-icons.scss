@@ -46,5 +46,19 @@
         left: 0;
       }
     }
+
+    &.--two-columns {
+      > div {
+        padding: 0 0;
+        flex: 0 1 49%;
+      }
+
+      div ~ div {
+        &::after {
+          content: "";
+          display: none;
+        }
+      }
+    }
   }
 }
