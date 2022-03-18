@@ -95,7 +95,7 @@ A template with two elements.
     </div>
   </div>
 
-  <div class="bw-product-layout__btns btns">
+  <div class="bw-product-layout__btns btns --3-columns-on-lg">
     <div>
       [BTNS]
     </div>
