@@ -151,6 +151,18 @@
         "illustration_2 illustration_2"
         "illustration_3 illustration_4"
         "btns btns";
+
+      .illustration_3 {
+        align-self: center;
+
+        > img {
+          margin: 0 0;
+        }
+      }
+
+      .bw-infographic-icons {
+        margin-bottom: 0;
+      }
     }
 
     // Grid areas
@@ -164,13 +176,14 @@
     .illustration_1,
     .illustration_2 {
       margin-bottom: 20px;
-      border: solid 1px Red;
+      // border: solid 1px Red;
     }
 
     .btns > div {
+      padding-bottom: 40px;
+
       @media only screen and (min-width: config.$breakpoint-lg) {
         padding-top: 0;
-        padding-bottom: 20px;
       }
     }
   }
