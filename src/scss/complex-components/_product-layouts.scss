@@ -45,6 +45,17 @@
       text-align: center;
       text-transform: uppercase !important;
     }
+
+    ///
+    /// Modifiers
+    ///
+    @media only screen and (min-width: config.$breakpoint-lg) {
+      &.--3-columns-on-lg {
+        > div {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+    }
   }
 
   ///
