@@ -198,4 +198,40 @@
       }
     }
   }
+
+  ///
+  /// Layout 4
+  /// For one element
+  ///
+  $grid-areas-004: description_1 illustration_1 illustration_2;
+
+  &.--004 {
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas:
+      "description_1 description_1"
+      "illustration_1 illustration_1"
+      "btns btns"
+      "illustration_2 illustration_2";
+
+    .illustration_1 {
+      margin-bottom: 20px;
+      // border: solid 1px Red;
+    }
+
+    .btns > div {
+      padding-bottom: 20px;
+
+      @media only screen and (min-width: config.$breakpoint-lg) {
+        padding-top: 0;
+      }
+    }
+
+    // Grid areas
+    @each $area in $grid-areas-004 {
+      .#{$area} {
+        grid-area: $area;
+      }
+    }
+  }
 }
