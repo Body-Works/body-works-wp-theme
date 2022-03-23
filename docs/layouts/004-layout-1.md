@@ -31,7 +31,7 @@ A template with one element.
   </div>
 
   <div class="bw-product-layout__illustration illustration_1">
-    [IMG]
+    <img src="[IMG]" alt="Rzut WYCISKANIE SIEDZĄC 1 STANOWISKO, skala trudności średnie lub trudne">
   </div>
 
   <div class="bw-product-layout__btns btns --3-columns-on-lg">
