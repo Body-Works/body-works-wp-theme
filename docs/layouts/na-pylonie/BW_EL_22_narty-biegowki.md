@@ -1,28 +1,29 @@
 ```html
 <div class="bw-product-layout --004" >
   <div class="bw-product-layout__description description_1">
-    <h4>Twister</h4>
+    <h4>Narty biegówki</h4>
 
     <p>
       <strong> Kategoria urządzenia: </strong>
 
-      poprawa koordynacji ruchowej, rozciąganie
+      aerobowe, rozciąganie
     </p>
 
     <p>
       <strong> Funkcje urządzenia: </strong>
 
-      Aktywuje stawy biodrowe, wzmacnia mięśnie brzucha, poprawia koordynację
-      ruchową.
+aktywuje ruch bioder barków oraz ramion. Wzmacnia stawy,
+rozciąga mięśnie rąk i nóg. Poprawia krążenie krwi i
+koordynację ruchową.
     </p>
 
     <p>
       <strong> Instrukcja: </strong>
 
-      Stanąć na obrotowej platformie. Chwycić obiema rękami poręcz.
-      Przytrzymując się poręczy, obracać dolną częścią ciała na zmianę w lewo i
-      prawo. W trakcie ćwiczenia należy starać się nie poruszać górną częścią
-      ciała.
+postawić obie stopy na podestachi złapać za uchwyty.
+Poruszać nogami na przemian w przód i w tył. Poruszać
+nogami na przemian w przód i w tył , jednocześnie aktywizując
+ręce - na przemian ciągnąc i odpychając drążki.
     </p>
   </div>
 

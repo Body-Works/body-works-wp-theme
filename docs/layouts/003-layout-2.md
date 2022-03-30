@@ -31,7 +31,7 @@ A template with two elements.
   </div>
 
   <div class="bw-product-layout__illustration illustration_1">
-    [IMG]
+    <img src="[IMG]" alt="Skala trudności średnie lub trudne">
   </div>
 
   <div class="bw-product-layout__description description_2">
@@ -59,11 +59,11 @@ A template with two elements.
   </div>
 
   <div class="bw-product-layout__illustration illustration_2">
-    [IMG]
+    <img src="[IMG]" alt="Skala trudności średnie lub trudne">
   </div>
 
   <div class="bw-product-layout__illustration illustration_3">
-    [IMG]
+    <img src="[IMG]" alt="Rzut ">
   </div>
 
   <div class="bw-product-layout__illustration illustration_4">
