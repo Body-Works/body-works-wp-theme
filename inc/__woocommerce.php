@@ -25,7 +25,13 @@ function bw_woocommerce_header_add_to_cart_fragment($fragments)
     <div class="cart-icon-wrap bw-cart-icon-wrap">
 
       <div class="bw-btn --primary engage-shake">
-        <?= __("Evaluation", "body_works"); ?>
+        <?php
+          if (BwConfig::$shopMode) {
+            echo __("Cart", "body_works");
+          } else {
+            echo __("Evaluation", "body_works");
+          }
+        ?>
       </div>
 
       <div class="cart-wrap bw-cart-wrap-item-count">
@@ -82,7 +88,13 @@ add_action('woocommerce_widget_shopping_cart_buttons', function () {
   echo '<a style="text-transform: uppercase !important" href="' . esc_url(wc_get_cart_url()) . '" class="button wc-forward">' . __('Selected items', 'body_works') . '</a>';
 }, 10);
 add_action('woocommerce_widget_shopping_cart_buttons', function () {
-  echo '<a style="text-transform: uppercase !important" href="' . esc_url(wc_get_checkout_url()) . '" class="button checkout wc-forward">' . __('Evaluate the products', 'body_works') . '</a>';
+  if (BwConfig::$shopMode) {
+    $btnText = __('Proceed to checkout', 'body_works');
+  } else {
+    $btnText = __('Evaluate the products', 'body_works');
+  }
+
+  echo '<a style="text-transform: uppercase !important" href="' . esc_url(wc_get_checkout_url()) . '" class="button checkout wc-forward">' . $btnText . '</a>';
 }, 20);
 
 /**
@@ -204,9 +216,34 @@ function bw_pop_column($column, $post_id)
       echo get_field("model", $post_id);
       break;
 
-    // Note needded any more
-    /* case "order":
+      // Note needded any more
+      /* case "order":
       echo get_field("order", $post_id);
       break; */
   }
 }
+
+/**
+ * Change buttons in shop mode
+ */
+
+// To change add to cart text on single product page
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'woocommerce_custom_single_add_to_cart_text' );
+function woocommerce_custom_single_add_to_cart_text() {
+  if (BwConfig::$shopMode) {
+    return __( 'Add to cart', 'body_works' );
+  } else {
+    return __( 'Add to evaluation', 'body_works' );
+  }
+}
+
+// To change add to cart text on product archives(Collection) page
+add_filter( 'woocommerce_product_add_to_cart_text', 'woocommerce_custom_product_add_to_cart_text' );
+function woocommerce_custom_product_add_to_cart_text() {
+  if (BwConfig::$shopMode) {
+    return __( 'Add to cart', 'body_works' );
+  } else {
+    return __( 'Add to evaluation', 'body_works' );
+  }
+}
+

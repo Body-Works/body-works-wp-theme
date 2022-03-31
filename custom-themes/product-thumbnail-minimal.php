@@ -18,13 +18,22 @@
   echo '<a class="bw-single-product__thumb" href="' . get_permalink() . '">';
   echo  woocommerce_get_product_thumbnail() . $product_second_image;
   echo '</a>';
+
+
   echo '<div class="product-meta">';
   echo '<a href="' . get_permalink() . '">';
   do_action('woocommerce_shop_loop_item_title');
   echo '</a>';
   do_action('woocommerce_after_shop_loop_item_title');
   echo '<div class="price-hover-wrap">';
-  // do_action('nectar_woo_minimal_price');
+
+  // Show price in shop mode
+  if (BwConfig::$shopMode) {
+    echo "<div class='bw-single-product__price'>";
+    do_action('nectar_woo_minimal_price');
+    echo "</div>";
+  }
+
   echo '<div class="product-add-to-cart" data-nectar-quickview="' . $nectar_quick_view_in_use . '">';
   woocommerce_template_loop_add_to_cart();
   do_action('nectar_woocommerce_before_add_to_cart');

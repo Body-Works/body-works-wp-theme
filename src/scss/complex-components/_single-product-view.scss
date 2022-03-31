@@ -3,7 +3,6 @@
 ///
 /// Single product view
 ///
-
 .bw-single-product {
   .woocommerce-loop-product__model {
     border: solid 1px var(--border-light);
@@ -15,6 +14,16 @@
 
   .product-meta {
     padding-top: 10px !important;
+  }
+
+  &__price {
+    position: absolute;
+    bottom: 90px;
+    right: 0;
+
+    > .price {
+      opacity: 1 !important;
+    }
   }
 
   @media only screen and (min-width: config.$breakpoint-lg) {

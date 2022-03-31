@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-03-04 10:48+0100\n"
-"PO-Revision-Date: 2022-03-04 10:51+0100\n"
+"POT-Creation-Date: 2022-03-31 11:10+0200\n"
+"PO-Revision-Date: 2022-03-31 11:10+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -15,29 +15,45 @@ msgstr ""
 "X-Poedit-KeywordsList: esc_html_e;__;esc_html__;_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: header.php:461
+#: header.php:465
 msgid "Search.."
 msgstr ""
 
-#: inc/__woocommerce.php:28
+#: inc/__woocommerce.php:30
+msgid "Cart"
+msgstr "Koszyk"
+
+#: inc/__woocommerce.php:32
 msgid "Evaluation"
 msgstr "Wycena"
 
-#: inc/__woocommerce.php:82
+#: inc/__woocommerce.php:88
 msgid "Selected items"
 msgstr "Wybrane przedmioty"
 
-#: inc/__woocommerce.php:85 woocommerce/cart/proceed-to-checkout-button.php:26
+#: inc/__woocommerce.php:92
+msgid "Proceed to checkout"
+msgstr "Przejdź do podsumowania"
+
+#: inc/__woocommerce.php:94 woocommerce/cart/proceed-to-checkout-button.php:26
 msgid "Evaluate the products"
 msgstr "Przejdź do wyceny"
 
-#: inc/__woocommerce.php:97
+#: inc/__woocommerce.php:109
 msgid ""
 "Please choose your items before a price evaluation.<br>You can do this by "
 "using product catalog:"
 msgstr ""
 "Prosimy o wybranie produktów przed wysyłką do wyceny.<br>Można dokonać tego "
 "na stronie z urządzeniami:"
+
+#: inc/__woocommerce.php:234 inc/__woocommerce.php:244
+msgid "Add to cart"
+msgstr "Dodaj do koszyka"
+
+#: inc/__woocommerce.php:236 inc/__woocommerce.php:246
+msgid "Add to evaluation"
+msgstr "Dodaj do wyceny"
 
 #: inc/salient-overrides/__header.php:270
 msgid "By"
@@ -247,3 +263,6 @@ msgstr ""
 #: woocommerce/order/order-details.php:82
 msgid "Note:"
 msgstr ""
+
+#~ msgid "View<br>cart"
+#~ msgstr "Zawartość<br>koszyka"

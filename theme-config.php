@@ -54,4 +54,7 @@ abstract class BwConfig {
 
   /** @var string $gaId Google analytics id */
   public static $gaId = "UA-16322686-4";
+
+  /** @var bool $shopMode Show prices etc. */
+  public static $shopMode = true;
 }
