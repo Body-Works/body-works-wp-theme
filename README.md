@@ -2,6 +2,12 @@
 
 ## Development instructions
 
+Install npm packages:
+
+```
+npm install
+```
+
 Run `Grunt` in watch mode to generate new assets on the fly:
 
 ```
@@ -13,6 +19,10 @@ Run `Grunt` in default mode to create responsive images:
 ```
 grunt default
 ```
+
+## Configuration
+
+All options to configure template can be found in the `theme-config.php` file.
 
 ### Translations
 
