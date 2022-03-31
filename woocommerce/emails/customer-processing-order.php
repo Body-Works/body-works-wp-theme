@@ -27,8 +27,12 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 <?php /* translators: %s: Customer first name */ ?>
 <p><?= esc_html__( 'Thank you for your interest in our products.', 'body_works' ); ?></p>
 <?php /* translators: %s: Order number */ ?>
-<p><?php printf( esc_html__( 'Your request for quotation has been registered in our system under the number #%s. We will send the trade offer as close as possible.', 'body_works'), esc_html( $order->get_order_number() ) ); ?></p>
 
+<?php if (BwConfig::$shopMode): ?>
+  <p><?php printf( esc_html__( 'Your order has been registered in our system under the number #%s. We will send you more details as soon as possible.', 'body_works'), esc_html( $order->get_order_number() ) ); ?></p>
+<?php else: ?>
+  <p><?php printf( esc_html__( 'Your request for quotation has been registered in our system under the number #%s. We will send the trade offer as close as possible.', 'body_works'), esc_html( $order->get_order_number() ) ); ?></p>
+<?php endif; ?>
 <?php
 
 /*

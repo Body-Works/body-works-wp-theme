@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-03-31 15:52+0200\n"
-"PO-Revision-Date: 2022-03-31 15:53+0200\n"
+"POT-Creation-Date: 2022-03-31 18:38+0200\n"
+"PO-Revision-Date: 2022-03-31 18:39+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -17,7 +17,7 @@ msgstr ""
 
 #: header.php:465
 msgid "Search.."
-msgstr ""
+msgstr "Szukaj..."
 
 #: inc/__woocommerce.php:38
 msgid "Cart"
@@ -35,7 +35,7 @@ msgstr "Wybrane przedmioty"
 msgid "Proceed to checkout"
 msgstr "Przejdź do podsumowania"
 
-#: inc/__woocommerce.php:102 woocommerce/cart/proceed-to-checkout-button.php:26
+#: inc/__woocommerce.php:102 woocommerce/cart/proceed-to-checkout-button.php:30
 msgid "Evaluate the products"
 msgstr "Przejdź do wyceny"
 
@@ -130,35 +130,35 @@ msgstr ""
 msgid "Return to products"
 msgstr "Przejdź do urządzeń"
 
-#: woocommerce/cart/cart.php:30 woocommerce/order/order-details.php:44
+#: woocommerce/cart/cart.php:31 woocommerce/order/order-details.php:44
 msgid "Product"
 msgstr ""
 
-#: woocommerce/cart/cart.php:36
+#: woocommerce/cart/cart.php:37
 msgid "Price"
 msgstr ""
 
-#: woocommerce/cart/cart.php:39
+#: woocommerce/cart/cart.php:40
 msgid "Quantity"
 msgstr "Ilość"
 
-#: woocommerce/cart/cart.php:45 woocommerce/checkout/review-order.php:135
+#: woocommerce/cart/cart.php:46 woocommerce/checkout/review-order.php:135
 msgid "Total"
 msgstr ""
 
-#: woocommerce/cart/cart.php:68 woocommerce/cart/mini-cart.php:46
+#: woocommerce/cart/cart.php:69 woocommerce/cart/mini-cart.php:46
 msgid "Remove this item"
 msgstr ""
 
-#: woocommerce/cart/cart.php:102
+#: woocommerce/cart/cart.php:103
 msgid "Available on backorder"
 msgstr ""
 
-#: woocommerce/cart/cart.php:160
+#: woocommerce/cart/cart.php:176
 msgid "Coupon:"
 msgstr ""
 
-#: woocommerce/cart/cart.php:165
+#: woocommerce/cart/cart.php:181
 msgid "Update evaluation"
 msgstr "Zaktualizuj"
 
@@ -169,6 +169,11 @@ msgstr ""
 #: woocommerce/cart/mini-cart.php:82
 msgid "No products in the cart."
 msgstr ""
+
+#: woocommerce/cart/proceed-to-checkout-button.php:28
+#: woocommerce/checkout/payment.php:56
+msgid "Confirm your purchases"
+msgstr "Potwierdź zakupy"
 
 #: woocommerce/checkout/payment.php:34
 msgid ""
@@ -192,10 +197,6 @@ msgstr ""
 #: woocommerce/checkout/payment.php:45
 msgid "Update totals"
 msgstr "Zaktualizuj"
-
-#: woocommerce/checkout/payment.php:56
-msgid "Confirm your purchases"
-msgstr "Potwierdź zakupy"
 
 #: woocommerce/checkout/payment.php:58
 msgid "Send products for valuation"
@@ -247,7 +248,16 @@ msgstr ""
 msgid "Thank you for your interest in our products."
 msgstr "Dziękujemy za zainteresowanie naszymi produktami."
 
-#: woocommerce/emails/customer-processing-order.php:30
+#: woocommerce/emails/customer-processing-order.php:32
+#, php-format
+msgid ""
+"Your order has been registered in our system under the number #%s. We will "
+"send you more details as soon as possible."
+msgstr ""
+"Państwa zamówienie zostało zarejestrowane w naszym systemie pod numerem #%s. "
+"Więcej informacji prześlemy najszyciej jak to będzie możliwe."
+
+#: woocommerce/emails/customer-processing-order.php:34
 #, php-format
 msgid ""
 "Your request for quotation has been registered in our system under the "
@@ -256,7 +266,7 @@ msgstr ""
 "Państwa zapytanie ofertowe zostało zarejestrowane w naszym systemie pod "
 "numerem #%s. Ofertę handlową prześlemy najszyciej jak to będzie możliwe."
 
-#: woocommerce/emails/customer-processing-order.php:55
+#: woocommerce/emails/customer-processing-order.php:59
 msgid "Thanks!"
 msgstr "Dziękujemy!"
 
