@@ -30,7 +30,7 @@ defined( 'ABSPATH' ) || exit;
 	 	return;
 	 }
 
-$options = get_nectar_theme_options(); 
+$options = get_nectar_theme_options();
 $product_style = (!empty($options['product_style'])) ? $options['product_style'] : 'classic';
 $product_gallery_style = (!empty($options['single_product_gallery_type'])) ? $options['single_product_gallery_type'] : 'default';
 $product_hide_sku = (!empty($options['woo_hide_product_sku'])) ? $options['woo_hide_product_sku'] : 'false';
@@ -44,20 +44,21 @@ $product_hide_sku = (!empty($options['woo_hide_product_sku'])) ? $options['woo_h
 	<?php
 		/**
 		 * woocommerce_before_single_product_summary hook.
-		 * 
+		 *
          * @about This displays product gallery.
-         * 
+         *
 		 * @hooked woocommerce_show_product_sale_flash - 10
 		 * @hooked woocommerce_show_product_images - 20
 		 */
 		do_action( 'woocommerce_before_single_product_summary' );
 	?>
+
 	<div class="summary entry-summary">
 
 		<?php
 			/**
 			 * woocommerce_single_product_summary hook.
-             * 
+             *
              * @about This displays product summary with cart form.
 			 *
 			 * @hooked woocommerce_template_single_title - 5

@@ -149,4 +149,15 @@ html {
     .nectar-button.see-through-2.--force-uppercase {
       text-transform: uppercase !important;
   }
+
+  ///
+  /// Add customised padding to product description
+  ///
+  .woocommerce-product-details__short-description {
+    padding-top: 60px;
+
+    &.--with-price-tag {
+      padding-top: 0;
+    }
+  }
 }

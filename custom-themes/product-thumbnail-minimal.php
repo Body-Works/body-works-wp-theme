@@ -1,3 +1,15 @@
+<?php
+/**
+ * Template for custom thumbnail view.
+ *
+ * Do not modify files here! Use repository like a civilized programmer.
+ * Mess with the best, die like the rest! Hack the planet!
+ *
+ * @author Konrad Fedorczyk <contact@realhe.ro>
+ * @link https://github.com/fedek6/body-works
+ */
+$product = wc_get_product();
+?>
 <div class="background-color-expand"></div>
 <div class="bw-single-product product-wrap">
   <?php

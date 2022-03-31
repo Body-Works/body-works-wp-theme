@@ -13,6 +13,14 @@ add_action('woocommerce_before_single_product_summary', function () {
   echo "</div>";
 }, 22);
 
+// Add customised price tag to single product
+if (BwConfig::$shopMode) {
+  add_action('woocommerce_single_product_summary', function () {
+    include(get_stylesheet_directory() . '/custom-themes/price-tag-custom.php');
+  }, 1);
+}
+
+
 /**
  * Change a look of cart
  */
@@ -26,11 +34,11 @@ function bw_woocommerce_header_add_to_cart_fragment($fragments)
 
       <div class="bw-btn --primary engage-shake">
         <?php
-          if (BwConfig::$shopMode) {
-            echo __("Cart", "body_works");
-          } else {
-            echo __("Evaluation", "body_works");
-          }
+        if (BwConfig::$shopMode) {
+          echo __("Cart", "body_works");
+        } else {
+          echo __("Evaluation", "body_works");
+        }
         ?>
       </div>
 
@@ -141,7 +149,7 @@ function woocommerce_template_loop_product_title()
   echo "<h2 class=\"bw-product-title  $classes " . esc_attr(apply_filters('woocommerce_product_loop_title_classes', 'woocommerce-loop-product__title')) . '">' . get_the_title() . '</h2>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 }
 
-
+add_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
 /**
  * Woocommerce sort by model.
  */
@@ -228,22 +236,23 @@ function bw_pop_column($column, $post_id)
  */
 
 // To change add to cart text on single product page
-add_filter( 'woocommerce_product_single_add_to_cart_text', 'woocommerce_custom_single_add_to_cart_text' );
-function woocommerce_custom_single_add_to_cart_text() {
+add_filter('woocommerce_product_single_add_to_cart_text', 'woocommerce_custom_single_add_to_cart_text');
+function woocommerce_custom_single_add_to_cart_text()
+{
   if (BwConfig::$shopMode) {
-    return __( 'Add to cart', 'body_works' );
+    return __('Add to cart', 'body_works');
   } else {
-    return __( 'Add to evaluation', 'body_works' );
+    return __('Add to evaluation', 'body_works');
   }
 }
 
 // To change add to cart text on product archives(Collection) page
-add_filter( 'woocommerce_product_add_to_cart_text', 'woocommerce_custom_product_add_to_cart_text' );
-function woocommerce_custom_product_add_to_cart_text() {
+add_filter('woocommerce_product_add_to_cart_text', 'woocommerce_custom_product_add_to_cart_text');
+function woocommerce_custom_product_add_to_cart_text()
+{
   if (BwConfig::$shopMode) {
-    return __( 'Add to cart', 'body_works' );
+    return __('Add to cart', 'body_works');
   } else {
-    return __( 'Add to evaluation', 'body_works' );
+    return __('Add to evaluation', 'body_works');
   }
 }
-
