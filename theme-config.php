@@ -8,7 +8,7 @@
  * @author Konrad Fedorczyk <contact@realhe.ro>
  * @link https://github.com/fedek6/body-works
  */
-define("TEMPLATE_VERSION", "1.0.44");
+define("TEMPLATE_VERSION", "1.0.45");
 define("TEMPLATE_VARIANT", "body-works");
 
 abstract class BwConfig {
@@ -61,5 +61,5 @@ abstract class BwConfig {
   public static $gaId = "UA-16322686-4";
 
   /** @var bool $shopMode Show prices etc. */
-  public static $shopMode = true;
+  public static $shopMode = false;
 }
