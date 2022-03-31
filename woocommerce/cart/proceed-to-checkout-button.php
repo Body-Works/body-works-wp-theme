@@ -23,5 +23,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <a style="text-transform: uppercase !important" href="<?php echo esc_url( wc_get_checkout_url() ); ?>" class="checkout-button button alt wc-forward">
-	<?php esc_html_e( 'Evaluate the products', 'body_works' ); ?>
+	<?php
+    if (BwConfig::$shopMode) {
+      $btnText = __( 'Confirm your purchases', 'body_works' );
+    } else {
+      $btnText = __( 'Evaluate the products', 'body_works' );
+    }
+
+    echo esc_html($btnText);
+  ?>
 </a>

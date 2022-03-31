@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-03-31 11:10+0200\n"
-"PO-Revision-Date: 2022-03-31 11:10+0200\n"
+"POT-Creation-Date: 2022-03-31 15:52+0200\n"
+"PO-Revision-Date: 2022-03-31 15:53+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -19,27 +19,27 @@ msgstr ""
 msgid "Search.."
 msgstr ""
 
-#: inc/__woocommerce.php:30
+#: inc/__woocommerce.php:38
 msgid "Cart"
 msgstr "Koszyk"
 
-#: inc/__woocommerce.php:32
+#: inc/__woocommerce.php:40
 msgid "Evaluation"
 msgstr "Wycena"
 
-#: inc/__woocommerce.php:88
+#: inc/__woocommerce.php:96
 msgid "Selected items"
 msgstr "Wybrane przedmioty"
 
-#: inc/__woocommerce.php:92
+#: inc/__woocommerce.php:100
 msgid "Proceed to checkout"
 msgstr "Przejdź do podsumowania"
 
-#: inc/__woocommerce.php:94 woocommerce/cart/proceed-to-checkout-button.php:26
+#: inc/__woocommerce.php:102 woocommerce/cart/proceed-to-checkout-button.php:26
 msgid "Evaluate the products"
 msgstr "Przejdź do wyceny"
 
-#: inc/__woocommerce.php:109
+#: inc/__woocommerce.php:117
 msgid ""
 "Please choose your items before a price evaluation.<br>You can do this by "
 "using product catalog:"
@@ -47,11 +47,11 @@ msgstr ""
 "Prosimy o wybranie produktów przed wysyłką do wyceny.<br>Można dokonać tego "
 "na stronie z urządzeniami:"
 
-#: inc/__woocommerce.php:234 inc/__woocommerce.php:244
+#: inc/__woocommerce.php:243 inc/__woocommerce.php:254
 msgid "Add to cart"
 msgstr "Dodaj do koszyka"
 
-#: inc/__woocommerce.php:236 inc/__woocommerce.php:246
+#: inc/__woocommerce.php:245 inc/__woocommerce.php:256
 msgid "Add to evaluation"
 msgstr "Dodaj do wyceny"
 
@@ -134,35 +134,35 @@ msgstr "Przejdź do urządzeń"
 msgid "Product"
 msgstr ""
 
-#: woocommerce/cart/cart.php:31
+#: woocommerce/cart/cart.php:36
 msgid "Price"
 msgstr ""
 
-#: woocommerce/cart/cart.php:32
+#: woocommerce/cart/cart.php:39
 msgid "Quantity"
-msgstr ""
+msgstr "Ilość"
 
-#: woocommerce/cart/cart.php:33 woocommerce/checkout/review-order.php:115
+#: woocommerce/cart/cart.php:45 woocommerce/checkout/review-order.php:135
 msgid "Total"
 msgstr ""
 
-#: woocommerce/cart/cart.php:55 woocommerce/cart/mini-cart.php:46
+#: woocommerce/cart/cart.php:68 woocommerce/cart/mini-cart.php:46
 msgid "Remove this item"
 msgstr ""
 
-#: woocommerce/cart/cart.php:89
+#: woocommerce/cart/cart.php:102
 msgid "Available on backorder"
 msgstr ""
 
-#: woocommerce/cart/cart.php:136
+#: woocommerce/cart/cart.php:160
 msgid "Coupon:"
 msgstr ""
 
-#: woocommerce/cart/cart.php:141
+#: woocommerce/cart/cart.php:165
 msgid "Update evaluation"
 msgstr "Zaktualizuj"
 
-#: woocommerce/cart/mini-cart.php:72 woocommerce/checkout/review-order.php:68
+#: woocommerce/cart/mini-cart.php:72 woocommerce/checkout/review-order.php:81
 msgid "Subtotal"
 msgstr ""
 
@@ -170,18 +170,18 @@ msgstr ""
 msgid "No products in the cart."
 msgstr ""
 
-#: woocommerce/checkout/payment.php:33
+#: woocommerce/checkout/payment.php:34
 msgid ""
 "Sorry, it seems that there are no available payment methods for your state. "
 "Please contact us if you require assistance or wish to make alternate "
 "arrangements."
 msgstr ""
 
-#: woocommerce/checkout/payment.php:33
+#: woocommerce/checkout/payment.php:34
 msgid "Please fill in your details above to see available payment methods."
 msgstr ""
 
-#: woocommerce/checkout/payment.php:42
+#: woocommerce/checkout/payment.php:43
 #, php-format
 msgid ""
 "Since your browser does not support JavaScript, or it is disabled, please "
@@ -189,17 +189,21 @@ msgid ""
 "You may be charged more than the amount stated above if you fail to do so."
 msgstr ""
 
-#: woocommerce/checkout/payment.php:44
+#: woocommerce/checkout/payment.php:45
 msgid "Update totals"
 msgstr "Zaktualizuj"
 
-#: woocommerce/checkout/payment.php:51
+#: woocommerce/checkout/payment.php:56
+msgid "Confirm your purchases"
+msgstr "Potwierdź zakupy"
+
+#: woocommerce/checkout/payment.php:58
 msgid "Send products for valuation"
 msgstr "Wyślij do wyceny"
 
-#: woocommerce/checkout/review-order.php:46
+#: woocommerce/checkout/review-order.php:47
 msgid "Quantity: "
-msgstr ""
+msgstr "Ilość: "
 
 #: woocommerce/checkout/thankyou.php:29
 msgid ""
@@ -233,7 +237,7 @@ msgstr ""
 
 #: woocommerce/checkout/thankyou.php:62
 msgid "Total:"
-msgstr ""
+msgstr "Łącznie:"
 
 #: woocommerce/checkout/thankyou.php:68
 msgid "Payment method:"
@@ -254,11 +258,11 @@ msgstr ""
 
 #: woocommerce/emails/customer-processing-order.php:55
 msgid "Thanks!"
-msgstr ""
+msgstr "Dziękujemy!"
 
 #: woocommerce/order/order-details.php:38
 msgid "Order details"
-msgstr ""
+msgstr "Szczegóły"
 
 #: woocommerce/order/order-details.php:82
 msgid "Note:"
