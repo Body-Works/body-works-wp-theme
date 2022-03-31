@@ -15,29 +15,34 @@ abstract class BwConfig {
   /** @var array $logos Logos for the header grid */
   public static $logos = [
     [
-      "image"     => "logo-body-works.png?ver=2",
-      "url"       => "https://body-works.pl",
-      "modifier"  => "--body-works",
+      "image"           => "logo-body-works.png?ver=2",
+      "url"             => "https://body-works.pl",
+      "modifier"        => "--body-works",
+      "targetBlank"     => false
     ],
     [
-      "image"     => "logo-body-worksout.png?ver=2",
-      "url"       => "https://www.bodyworksout.pl/",
-      "modifier"  => "--body-worksout",
+      "image"           => "logo-body-worksout.png?ver=2",
+      "url"             => "https://www.bodyworksout.pl/",
+      "modifier"        => "--body-worksout",
+      "targetBlank"     => true
     ],
     [
-      "image"     => "logo-kids-fitness.png?ver=2",
-      "url"       => "http://silowniedladzieci.eu/",
-      "modifier"  => "--kids-fitness",
+      "image"           => "logo-kids-fitness.png?ver=2",
+      "url"             => "http://silowniedladzieci.eu/",
+      "modifier"        => "--kids-fitness",
+      "targetBlank"     => true
     ],
     [
-      "image"     => "logo-fit-system.png?ver=2",
-      "url"       => "http://fit-system.pl",
-      "modifier"  => "--fit-system",
+      "image"           => "logo-fit-system.png?ver=2",
+      "url"             => "http://fit-system.pl",
+      "modifier"        => "--fit-system",
+      "targetBlank"     => true
     ],
     [
-      "image"     => "logo-fit-energy.png?ver=2",
-      "url"       => null,
-      "modifier"  => "--fit-energy",
+      "image"           => "logo-fit-energy.png?ver=2",
+      "url"             => null,
+      "modifier"        => "--fit-energy",
+      "targetBlank"     => true
     ],
   ];
 
