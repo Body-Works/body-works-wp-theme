@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Child theme for Body Works
  *
@@ -71,3 +72,19 @@ function mywptheme_child_deregister_styles()
 add_action("wp_enqueue_scripts", function () {
   wp_enqueue_script("bw-script", get_stylesheet_directory_uri() . '/assets/js/main.js', [], TEMPLATE_VERSION, true);
 });
+
+/**
+ * Customised Woocommerce excerpt
+ */
+function get_ecommerce_excerpt()
+{
+  $excerpt = get_the_excerpt();
+  $excerpt = preg_replace(" ([.*?])", '', $excerpt);
+  $excerpt = strip_shortcodes($excerpt);
+  $excerpt = strip_tags($excerpt);
+  $excerpt = substr($excerpt, 0, 155);
+  $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+  $excerpt = trim(preg_replace('~[\r\n]+~', ' ', $excerpt));
+
+  return $excerpt . "…";
+}

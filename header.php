@@ -10,12 +10,25 @@
    */
   global $post;
   global $woocommerce;
+
+
+  /**
+   * Determine metadescription
+   */
+  if (is_product()) {
+    $description = get_ecommerce_excerpt();
+  } elseif(get_field("meta_description", $post->ID)) {
+    $description = get_field("meta_description", $post->ID);
+  } else {
+    $description = get_bloginfo("description");
+  }
+
 ?><!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
 <!-- Meta Tags -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="description" content="<?= get_field("meta_description", $post->ID) ? get_field("meta_description", $post->ID) :  get_bloginfo("description"); ?>">
+<meta name="description" content="<?= esc_attr($description); ?>">
 
 <?php $options = get_nectar_theme_options(); ?>
 
