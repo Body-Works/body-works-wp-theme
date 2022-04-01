@@ -1,3 +1,5 @@
+<img src="https://body-works.pl/wp-content/themes/body-works/assets/img/logo-body-works.png" alt="Body Works">
+
 # Theme for body-works
 
 > Please commit to this repository when doing any changes on body-works website! Be kind for future developers 🙃
