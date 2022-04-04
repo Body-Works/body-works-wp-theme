@@ -12,7 +12,17 @@ Dla ułatwienia życia przyszłym programistom, proponuję dokonywać zmian wła
 
 W pliku readme znajduje się instrukcja budowania assetów.
 
-### Co jest w tym repozytorium?
+### Opisy produktów
+
+Opisy produktów wykorzystują kilka predefiniowanych szablonów (w zależności od ilości produktów składowych). Znajdziesz je w folderze `docs/layouts`. 
+
+Style tych szablonów (jak i wszystkie inne dodatkowe style) zostały napisane w metodologii ABEM.
+
+### Grafiki
+
+Do standaryzacji grafik najlepiej używać szablonów, które można znaleźć w folderze `docs/psd-templates`. 
+
+### Ogólnie co jest w tym repozytorium?
 
 - Kod witryny,
 
@@ -39,6 +49,10 @@ W repozytorium [GitHub - Body-Works/csv-to-buttons: Generate buttons from CSV](h
 Skompilowaną wersję można znaleźć [tutaj](https://body-works.pl/csv-to-buttons/).
 
 > Aby skorzystać z tego narzędzia należy utworzyć najpierw skoroszyt z URL'ami do dokumentafcji. Takie pliki znajdują się na Google Drive należącym do Body Works. 
+
+### Minifikowanie kodu
+
+`WordPress` ma brzydką tendencję do dodawania własnego HTML'a w miejsce nowych linii itp. Aby tego uniknąć używałem swojego narzędzia pod tym [adresem](https://minifyhtml.realhe.ro/).
 
 ## Narzędzie do automatycznego podpisywania zdjęć produktów
 
