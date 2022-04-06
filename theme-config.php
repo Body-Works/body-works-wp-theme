@@ -62,4 +62,7 @@ abstract class BwConfig {
 
   /** @var bool $shopMode Show prices etc. */
   public static $shopMode = false;
+
+  /** @var bool $disableUpdates */
+  public static $disableUpdates = true;
 }
