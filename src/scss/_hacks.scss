@@ -147,7 +147,7 @@ html {
   body[data-button-style*="slightly_rounded"]
     .col.dark
     .nectar-button.see-through-2.--force-uppercase {
-      text-transform: uppercase !important;
+    text-transform: uppercase !important;
   }
 
   ///
@@ -159,5 +159,102 @@ html {
     &.--with-price-tag {
       padding-top: 0;
     }
+  }
+  #header-outer.transparent:not([data-lhe="animated_underline"])
+    header#top
+    nav
+    > ul
+    > li
+    > a:hover,
+  #header-outer.transparent:not([data-lhe="animated_underline"])
+    header#top
+    nav
+    .sf-menu
+    > li.sfHover
+    > a,
+  #header-outer.transparent:not([data-lhe="animated_underline"])
+    header#top
+    nav
+    .sf-menu
+    > li.current_page_ancestor
+    > a,
+  #header-outer.transparent header#top nav .sf-menu > li.current-menu-item > a,
+  #header-outer.transparent:not([data-lhe="animated_underline"])
+    header#top
+    nav
+    .sf-menu
+    > li.current-menu-ancestor
+    > a,
+  #header-outer.transparent:not([data-lhe="animated_underline"])
+    header#top
+    nav
+    .sf-menu
+    > li.current-menu-item
+    > a,
+  #header-outer.transparent:not([data-lhe="animated_underline"])
+    header#top
+    nav
+    .sf-menu
+    > li.current_page_item
+    > a,
+  #header-outer.transparent
+    header#top
+    nav
+    > ul
+    > li
+    > a:hover
+    > .sf-sub-indicator
+    > i,
+  #header-outer.transparent header#top nav > ul > li.sfHover > a > span > i,
+  #header-outer.transparent header#top nav ul #nectar-user-account a:hover span,
+  #header-outer.transparent header#top nav ul #search-btn a:hover span,
+  #header-outer.transparent header#top nav ul #nectar-user-account a:hover span,
+  #header-outer.transparent
+    header#top
+    nav
+    ul
+    .slide-out-widget-area-toggle
+    a:hover
+    span,
+  #header-outer.transparent
+    header#top
+    nav
+    .sf-menu
+    > li.current-menu-item
+    > a
+    i,
+  body
+    #header-outer.transparent:not([data-lhe="animated_underline"])
+    header#top
+    nav
+    .sf-menu
+    > li.current_page_item
+    > a
+    .sf-sub-indicator
+    i,
+  #header-outer.transparent
+    header#top
+    nav
+    .sf-menu
+    > li.current-menu-ancestor
+    > a
+    i,
+  body
+    #header-outer.transparent:not([data-lhe="animated_underline"])
+    header#top
+    nav
+    .sf-menu
+    > li.current-menu-ancestor
+    > a
+    i,
+  #header-outer.transparent .cart-outer:hover .icon-salient-cart,
+  .ascend
+    #boxed
+    #header-outer.transparent
+    .cart-outer:hover
+    .cart-menu
+    .cart-icon-wrap
+    .icon-salient-cart {
+    color: var(--primary-green) !important;
   }
 }
