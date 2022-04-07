@@ -75,3 +75,20 @@ Ustawienia dla `Dockera` można znaleźć tutaj: [GitHub - Body-Works/docker-con
 ## Porządek
 
 Jeżeli chcesz ułatwić następnemu programiście życie, to stosuj się do reguł ustalonych dla tej organizacji. Przykładowo kategoryzuj odpowiednio zdjęcia wrzucane do CMS'a i commituj zmiany w repozytorium. 
+
+## Snippety
+
+SQL do automatycznej zmiany adresów w menu:
+
+```sql
+UPDATE
+    `wp_postmeta`
+SET
+    `meta_value` = replace(
+        meta_value,
+        "https://body-works.pl",
+        "https://sklep.body-works.pl"
+    )
+WHERE
+    `wp_postmeta`.`meta_key` = '_menu_item_url';
+ ```
